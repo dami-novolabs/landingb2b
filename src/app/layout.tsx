@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const mono = JetBrains_Mono({
@@ -37,7 +38,9 @@ export default function RootLayout({
       lang="es"
       className={`${inter.variable} ${mono.variable} ${editorial.variable}`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+          <SmoothScroll>{children}</SmoothScroll>
+        </body>
     </html>
   );
 }

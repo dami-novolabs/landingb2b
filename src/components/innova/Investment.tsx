@@ -44,7 +44,7 @@ export default function Investment() {
       <div className="mx-auto mt-16 max-w-[1280px] px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {CARDS.map((card) => (
-            <Card key={card.eyebrow} as="article" className="flex flex-col p-12">
+            <Card key={card.eyebrow} as="article" className="flex flex-col p-7 md:p-12">
               <Eyebrow>{card.eyebrow}</Eyebrow>
               <h3 className="mb-8 mt-4 font-display text-[42px] tracking-[-0.025em] text-novo-black">
                 {card.price}

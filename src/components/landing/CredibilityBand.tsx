@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 const STATS = [
   {
@@ -22,6 +22,8 @@ const STATS = [
 ];
 
 export default function CredibilityBand() {
+  const reduce = useReducedMotion();
+
   return (
     <section className="border-b border-t border-novo-line bg-novo-cream px-8 py-[64px] md:py-[96px]">
       <div className="mx-auto mb-20 max-w-[720px]">
@@ -38,12 +40,12 @@ export default function CredibilityBand() {
         {STATS.map((stat, i) => (
           <motion.div
             key={stat.value}
-            initial={{ opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={reduce ? { opacity: 1 } : { opacity: 0, y: 12 }}
+            whileInView={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: i * 0.1, ease: [0, 0, 0.2, 1] }}
           >
-            <p className="mb-4 font-display text-[64px] leading-none tracking-[-0.04em] text-novo-black">
+            <p className="mb-4 font-display text-[48px] leading-none tracking-[-0.04em] text-novo-black md:text-[64px]">
               {stat.value}
             </p>
             <p className="font-mono text-mono-xs uppercase leading-[1.5] tracking-[0.08em] text-novo-graphite">
