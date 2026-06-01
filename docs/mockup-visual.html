@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novo Labs — Mockup visual del rediseño</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,300;9..144,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --novo-black:       #0A0A0A;
+    --novo-near-black:  #141414;
+    --novo-charcoal:    #2A2A2A;
+    --novo-graphite:    #5C5C5C;
+    --novo-mid:         #8A8A8A;
+    --novo-line:        #E5E1D9;
+    --novo-cream:       #F5F2EC;
+    --novo-cream-50:    #FAF8F3;
+    --novo-white:       #FFFFFF;
+    --novo-accent:      #FF3A20;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--novo-cream);
+    color: var(--novo-black);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* === Header === */
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 242, 236, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--novo-line);
+    padding: 16px 32px;
+  }
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    color: var(--novo-black);
+  }
+  .nav { display: flex; gap: 32px; align-items: center; }
+  .nav a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--novo-charcoal);
+    text-decoration: none;
+    position: relative;
+    transition: color 200ms ease;
+  }
+  .nav a::after {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0; height: 1px;
+    background: var(--novo-accent);
+    transition: width 200ms ease;
+  }
+  .nav a:hover { color: var(--novo-accent); }
+  .nav a:hover::after { width: 100%; }
+  .cta-mini {
+    background: var(--novo-black);
+    color: var(--novo-cream);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 200ms ease;
+  }
+  .cta-mini:hover {
+    background: var(--novo-charcoal);
+    transform: translateY(-1px);
+  }
+
+  /* === Containers === */
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+  .narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+
+  /* === Typography === */
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--novo-graphite);
+    margin-bottom: 32px;
+    display: block;
+  }
+  .display-xl {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: var(--novo-black);
+    margin-bottom: 40px;
+  }
+  .display-l {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: var(--novo-black);
+    margin-bottom: 32px;
+  }
+  .display-m {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: var(--novo-black);
+  }
+  .display-s {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--novo-black);
+  }
+  .body-xl {
+    font-size: 21px;
+    line-height: 1.55;
+    letter-spacing: -0.005em;
+    color: var(--novo-charcoal);
+    max-width: 56ch;
+    margin-bottom: 48px;
+  }
+  .body-l {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--novo-charcoal);
+    max-width: 56ch;
+  }
+  .body-m { font-size: 16px; line-height: 1.6; color: var(--novo-graphite); }
+  .accent { color: var(--novo-accent); font-weight: 500; }
+
+  /* === CTAs === */
+  .cta-row { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+  .cta-primary {
+    background: var(--novo-black);
+    color: var(--novo-cream);
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    transition: all 200ms ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .cta-primary:hover {
+    background: var(--novo-charcoal);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .cta-secondary {
+    color: var(--novo-black);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid var(--novo-black);
+    padding-bottom: 4px;
+    transition: all 200ms ease;
+  }
+  .cta-secondary:hover {
+    border-bottom-color: var(--novo-accent);
+    color: var(--novo-accent);
+  }
+
+  /* === Hero === */
+  .hero {
+    padding: 160px 0 128px;
+    background: var(--novo-cream);
+  }
+  .hero h1 br + br { display: none; }
+
+  /* === Credibility band === */
+  .credibility {
+    background: var(--novo-cream);
+    padding: 96px 0;
+    border-top: 1px solid var(--novo-line);
+    border-bottom: 1px solid var(--novo-line);
+  }
+  .credibility-line {
+    font-size: 18px;
+    color: var(--novo-graphite);
+    margin-bottom: 80px;
+    max-width: 720px;
+    line-height: 1.55;
+  }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+  }
+  .stat-number {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--novo-black);
+    margin-bottom: 16px;
+  }
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--novo-graphite);
+    line-height: 1.5;
+  }
+
+  /* === Two tracks === */
+  .tracks {
+    background: var(--novo-cream-50);
+    padding: 128px 0;
+  }
+  .tracks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 80px;
+  }
+  .track-card {
+    background: var(--novo-white);
+    border: 1px solid var(--novo-line);
+    border-radius: 6px;
+    padding: 48px;
+    transition: all 300ms ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .track-card:hover {
+    border-color: var(--novo-charcoal);
+    transform: translateY(-2px);
+  }
+  .track-card .eyebrow { margin-bottom: 24px; }
+  .track-card h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--novo-black);
+    margin-bottom: 24px;
+  }
+  .track-card p {
+    color: var(--novo-graphite);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .track-card .ideal-for {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--novo-mid);
+    padding-top: 32px;
+    margin-top: auto;
+    border-top: 1px solid var(--novo-line);
+    margin-bottom: 24px;
+  }
+  .track-card .card-cta {
+    color: var(--novo-black);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid var(--novo-black);
+    padding-bottom: 4px;
+    align-self: flex-start;
+    transition: all 200ms ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .track-card .card-cta .arrow {
+    transition: transform 300ms ease;
+    display: inline-block;
+  }
+  .track-card:hover .card-cta {
+    color: var(--novo-accent);
+    border-bottom-color: var(--novo-accent);
+  }
+  .track-card:hover .arrow {
+    transform: translateX(4px);
+  }
+
+  /* === Cómo cobramos === */
+  .pricing {
+    background: var(--novo-cream-50);
+    padding: 128px 0;
+  }
+  .pricing-headline {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--novo-black);
+    margin-bottom: 80px;
+    max-width: 880px;
+  }
+  .pricing-headline .accent-soft {
+    color: var(--novo-accent);
+  }
+  .separator {
+    height: 1px;
+    background: var(--novo-line);
+    margin: 80px 0;
+    max-width: 880px;
+  }
+  .slot-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 48px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    color: var(--novo-charcoal);
+  }
+  .slot-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--novo-accent);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  /* === Animations === */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal {
+    opacity: 0;
+    animation: fadeUp 600ms cubic-bezier(0, 0, 0.2, 1) forwards;
+  }
+  .reveal-1 { animation-delay: 0ms; }
+  .reveal-2 { animation-delay: 120ms; }
+  .reveal-3 { animation-delay: 240ms; }
+  .reveal-4 { animation-delay: 400ms; }
+  .reveal-5 { animation-delay: 600ms; }
+
+  /* === Comparison note === */
+  .note {
+    background: var(--novo-near-black);
+    color: var(--novo-cream);
+    padding: 24px 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+  .note a {
+    color: var(--novo-accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--novo-accent);
+  }
+
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .display-xl { font-size: 44px; }
+    .display-l { font-size: 36px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    .tracks-grid { grid-template-columns: 1fr; }
+    .pricing-headline { font-size: 32px; }
+    .hero { padding: 96px 0 80px; }
+    .credibility { padding: 64px 0; }
+    .tracks, .pricing { padding: 80px 0; }
+    .nav { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NOTA EXPLICATIVA -->
+<div class="note">
+  MOCKUP VISUAL · Esta es una preview del nuevo direccionamiento.
+  Fuentes usadas: Fraunces (proxy de PP Editorial New) · Inter · JetBrains Mono.
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">Novo Labs</a>
+    <nav class="nav">
+      <a href="#">Innova</a>
+      <a href="#">Opera</a>
+      <a href="#">Método</a>
+      <a href="#">Equipo</a>
+      <a href="#" class="cta-mini">Agendar diagnóstico →</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="narrow">
+    <span class="eyebrow reveal reveal-1">PROGRAMA ESTRATÉGICO · 2 EMPRESAS POR TRIMESTRE</span>
+    <h1 class="display-xl">
+      <span class="reveal reveal-2" style="display: block;">Esto no es consultoría.</span>
+      <span class="reveal reveal-3" style="display: block;">Y tampoco una capacitación.</span>
+    </h1>
+    <p class="body-xl reveal reveal-4">
+      Trabajamos dentro de tu empresa durante 12 semanas con un criterio de éxito firmado el día uno.
+      Si al cierre no se cumple, <span class="accent">devolvemos el 50% de la inversión.</span>
+    </p>
+    <div class="cta-row reveal reveal-5">
+      <a href="#" class="cta-primary">Agendar diagnóstico estratégico <span>→</span></a>
+      <a href="#tracks" class="cta-secondary">Ver cómo trabajamos ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY BAND -->
+<section class="credibility">
+  <div class="narrow">
+    <p class="credibility-line">
+      Trabajan directo con <strong style="color: var(--novo-black); font-weight: 500;">Tomás Volonté</strong> y <strong style="color: var(--novo-black); font-weight: 500;">Damián Sánchez</strong>.
+      Sin consultores junior. Sin subcontratación.
+    </p>
+  </div>
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-number">72</div>
+        <div class="stat-label">Productos digitales<br>construidos desde cero<br>2017–2023</div>
+      </div>
+      <div>
+        <div class="stat-number">18</div>
+        <div class="stat-label">Ediciones de<br>Startup School<br>2023–2025</div>
+      </div>
+      <div>
+        <div class="stat-number">360+</div>
+        <div class="stat-label">Proyectos acompañados<br>por el método</div>
+      </div>
+      <div>
+        <div class="stat-number">52%</div>
+        <div class="stat-label">Siguen activos<br>y facturando<br>(de los 360+)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TWO TRACKS -->
+<section class="tracks" id="tracks">
+  <div class="narrow" style="padding: 0 32px;">
+    <span class="eyebrow">DOS CAMINOS</span>
+    <h2 class="display-l">Innova o Opera.<br>Una empresa por trimestre, por track.</h2>
+    <p class="body-l">
+      Trabajamos un solo track por programa. La razón es simple: profundidad.
+      Si tu empresa tiene los dos desafíos, resolvemos el más urgente primero.
+      Eso lo definimos en el diagnóstico.
+    </p>
+  </div>
+  <div class="container">
+    <div class="tracks-grid">
+      <div class="track-card">
+        <span class="eyebrow">INNOVA · LANZAR</span>
+        <h3>Lanzar una nueva línea de negocio sin quemar presupuesto.</h3>
+        <p>
+          Para empresas que tienen una idea de producto, servicio o unidad de negocio
+          nueva y necesitan validar demanda real antes de invertir.
+        </p>
+        <p>
+          En 12 semanas, tu equipo aprende a hablar con clientes reales,
+          identificar el problema urgente y diseñar una oferta con compromiso de compra.
+        </p>
+        <div class="ideal-for">IDEAL PARA: CEO · VP INNOVACIÓN · CPO</div>
+        <a href="#" class="card-cta">Conocer Innova <span class="arrow">→</span></a>
+      </div>
+      <div class="track-card">
+        <span class="eyebrow">OPERA · ESCALAR</span>
+        <h3>Escalar la operación con IA sin sumar headcount.</h3>
+        <p>
+          Para empresas con procesos manuales que ya no pueden crecer sin más gente.
+          Diagnosticamos los cuellos de botella por impacto económico y
+          construimos la infraestructura de agentes que libera capacidad real.
+        </p>
+        <p>
+          En 12 semanas, tu equipo trabaja con una capa de IA propia,
+          documentada y de tu propiedad.
+        </p>
+        <div class="ideal-for">IDEAL PARA: CEO · COO · DIRECTOR OPERACIONES · CFO</div>
+        <a href="#" class="card-cta">Conocer Opera <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO COBRAMOS -->
+<section class="pricing">
+  <div class="narrow">
+    <span class="eyebrow">CÓMO COBRAMOS</span>
+    <h2 class="pricing-headline">
+      50% al inicio.<br>
+      50% en la semana 8, cuando hay algo construido.<br>
+      Si al cierre no se cumple el criterio firmado,<br>
+      <span class="accent-soft">devolvemos el segundo tramo.</span>
+    </h2>
+
+    <div class="separator"></div>
+
+    <p class="body-l" style="font-size: 18px; max-width: 720px;">
+      Las consultoras no pueden hacer esto porque cobran por horas facturadas,
+      no por resultado entregado. Las capacitaciones tampoco, porque entregan
+      contenido, no resultado. Nosotros podemos porque el riesgo está atado
+      al trabajo: si no funciona, no nos quedamos con el segundo tramo.
+    </p>
+
+    <div class="separator"></div>
+
+    <h3 class="display-s" style="margin-bottom: 24px;">Y por la misma razón, solo tomamos 2 empresas a la vez.</h3>
+    <p class="body-l" style="font-size: 18px; max-width: 720px;">
+      Cada programa requiere que Tomás o Damián bloqueen su agenda durante 12 semanas.
+      Subcontratar la facilitación destruiría el único diferenciador que importa:
+      que los fundadores del método trabajan directamente con tu equipo.
+    </p>
+
+    <div class="slot-indicator">
+      <span class="slot-dot"></span>
+      <span>1 SLOT DISPONIBLE PARA Q3 2026 · PRÓXIMO ABIERTO: Q4 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER NOTE -->
+<div class="note">
+  Mockup creado por Claude · 2026-05-31 · Para preview del nuevo direccionamiento.
+  Las fuentes finales son <a href="#">PP Editorial New</a> + Inter + JetBrains Mono.
+</div>
+
+</body>
+</html>
