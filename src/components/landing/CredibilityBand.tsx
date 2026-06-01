@@ -5,7 +5,7 @@ import { motion, useReducedMotion } from "framer-motion";
 const STATS = [
   {
     value: "8",
-    label: "AÑOS CONSTRUYENDO DESDE CERO",
+    label: "AÑOS SOLUCIONANDO PROBLEMAS DESDE CERO",
   },
   {
     value: "40",

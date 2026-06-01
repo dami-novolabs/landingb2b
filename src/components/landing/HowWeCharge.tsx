@@ -37,13 +37,7 @@ export default function HowWeCharge() {
           importa: que los fundadores del método trabajan directamente con tu equipo.
         </p>
 
-        <div className="mt-12 flex items-center gap-3 font-mono text-mono-s text-novo-charcoal">
-          <span
-            className="inline-block h-2 w-2 flex-shrink-0 rounded-full bg-novo-accent"
-            style={{ animation: "slot-pulse 2s ease-in-out infinite" }}
-          />
-          1 SLOT DISPONIBLE PARA Q3 2026 · PRÓXIMO ABIERTO: Q4 2026
-        </div>
+
       </div>
     </section>
   );

@@ -12,12 +12,12 @@ export default function FinalCTA() {
             <div className="p-8 md:p-16">
               <Eyebrow>EL DIAGNÓSTICO</Eyebrow>
               <h2 className="font-display text-[36px] leading-[1.08] tracking-[-0.03em] text-novo-black md:text-[56px]">
-                90 minutos.
+                45 minutos.
                 <br />
                 Sin compromiso.
               </h2>
               <p className="mb-10 mt-6 text-body-l text-novo-charcoal">
-                En esta conversación evaluamos juntos si el programa es el camino
+                En esta conversación evaluamos juntos si somos el equipo adecuado ¿
                 correcto para tu desafío.
               </p>
               <p className="mb-4 font-mono text-mono-s uppercase text-novo-charcoal">

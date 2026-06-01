@@ -178,7 +178,7 @@ export default function Ecosystem() {
       {/* Advisors carousel */}
       <div className="mx-auto max-w-[880px] px-8">
         <h3 className="mb-12 font-display text-[30px] text-novo-black">
-          Un consejo de socios comprometidos
+          Socios que apoyan Novolabs
         </h3>
       </div>
 

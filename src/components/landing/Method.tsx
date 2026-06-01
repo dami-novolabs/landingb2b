@@ -5,17 +5,17 @@ import { cn } from "@/lib/utils";
 
 const PHASES = [
   {
-    eyebrow: "FASE 1 / SEMANAS 1–4",
+    eyebrow: "FASE 1 / SEMANAS 1–2",
     title: "Diagnóstico",
     body: "Definir el desafío con precisión. Alinear stakeholders. Firmar el criterio de éxito.",
   },
   {
-    eyebrow: "FASE 2 / SEMANAS 5–8",
+    eyebrow: "FASE 2 / SEMANAS 3–5",
     title: "Validación",
     body: "Probar las hipótesis más riesgosas con evidencia real, no con supuestos.",
   },
   {
-    eyebrow: "FASE 3 / SEMANAS 9–12",
+    eyebrow: "FASE 3 / SEMANAS 6–12",
     title: "Construcción",
     body: "Construir la versión mínima que demuestra el resultado. Entregar la metodología al equipo.",
   },
