@@ -1,32 +1,46 @@
 "use client";
 
 import Cal, { getCalApi } from "@calcom/embed-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 interface Props {
   calLink?: string;
 }
 
 export default function CalEmbed({ calLink }: Props) {
-  const link = calLink || process.env.NEXT_PUBLIC_CAL_LINK;
+  const link = calLink ?? process.env.NEXT_PUBLIC_CAL_LINK;
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    (async function () {
-      const cal = await getCalApi();
-      cal("ui", {
-        theme: "light",
-        cssVarsPerTheme: {
-          light: {
-            "cal-bg": "#F5F2EC",
-            "cal-text": "#0A0A0A",
-            "cal-brand": "#0A0A0A",
-            "cal-border": "#E5E1D9",
+    let cancelled = false;
+
+    (async () => {
+      try {
+        const cal = await getCalApi();
+        if (cancelled) return;
+        cal("ui", {
+          theme: "light",
+          cssVarsPerTheme: {
+            light: {
+              "cal-bg": "#F5F2EC",
+              "cal-text": "#0A0A0A",
+              "cal-brand": "#0A0A0A",
+              "cal-border": "#E5E1D9",
+            },
           },
-        },
-        hideEventTypeDetails: false,
-        layout: "month_view",
-      });
+          hideEventTypeDetails: false,
+          layout: "month_view",
+        });
+        setReady(true);
+      } catch {
+        // Cal.com script blocked or unavailable — silently degrade
+        setReady(true);
+      }
     })();
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   if (!link) {
@@ -44,10 +58,14 @@ export default function CalEmbed({ calLink }: Props) {
   }
 
   return (
-    <Cal
-      calLink={link}
-      style={{ width: "100%", height: "100%", overflow: "scroll" }}
-      config={{ layout: "month_view" }}
-    />
+    <div style={{ minHeight: 600, width: "100%" }}>
+      {ready && (
+        <Cal
+          calLink={link}
+          style={{ width: "100%", height: "100%", overflow: "scroll" }}
+          config={{ layout: "month_view" }}
+        />
+      )}
+    </div>
   );
 }
