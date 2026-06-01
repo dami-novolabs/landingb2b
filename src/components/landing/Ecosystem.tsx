@@ -4,8 +4,16 @@ import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 
 const LOGOS = [
-  "Aerolab", "Baikal", "Cyberclick", "Simball", "Rox",
-  "Homa", "Coorva", "Possumus", "Serquo", "Intuition",
+  { name: "Aerolab",    src: "/logos/aerolab.png"    },
+  { name: "Baikal",     src: "/logos/baikal.png"     },
+  { name: "Cyberclick", src: "/logos/cyberclick.png" },
+  { name: "Simball",    src: "/logos/simball.png"    },
+  { name: "Rox",        src: "/logos/rox.png"        },
+  { name: "Homa",       src: "/logos/homa.png"       },
+  { name: "Coorva",     src: "/logos/coorva.png"     },
+  { name: "Possumus",   src: "/logos/possumus.png"   },
+  { name: "Serquo",     src: "/logos/serquo.png"     },
+  { name: "Intuition",  src: "/logos/intuition.png"  },
 ];
 
 const ADVISORS = [
@@ -151,14 +159,18 @@ export default function Ecosystem() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, ease: [0, 0, 0.2, 1] }}
         >
-          {LOGOS.map((name) => (
+          {LOGOS.map((logo) => (
             <div
-              key={name}
-              className="flex h-8 cursor-default items-center justify-center border border-dashed border-novo-line px-3 opacity-60 transition-opacity duration-200 hover:opacity-100"
+              key={logo.name}
+              className="flex h-12 items-center justify-center opacity-50 transition-opacity duration-200 hover:opacity-100"
             >
-              <span className="font-mono text-mono-xs uppercase text-novo-graphite">
-                {name}
-              </span>
+              <Image
+                src={logo.src}
+                alt={logo.name}
+                width={120}
+                height={40}
+                className="max-h-10 w-auto object-contain"
+              />
             </div>
           ))}
         </motion.div>
