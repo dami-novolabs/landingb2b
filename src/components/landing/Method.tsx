@@ -1,4 +1,3 @@
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonSecondary } from "@/components/ui/ButtonSecondary";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { cn } from "@/lib/utils";
@@ -24,22 +23,7 @@ const PHASES = [
 export default function Method() {
   return (
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
-      <div className="mx-auto max-w-[880px] px-8">
-        <SectionHeader
-          eyebrow="EL MÉTODO"
-          title={
-            <>
-              El Sistema de Validación Paga,
-              <br />
-              adaptado a empresas medianas.
-            </>
-          }
-          lead="Es el mismo método que usamos con 360+ proyectos individuales y que probamos durante 8 años. Aplicado al contexto corporativo, se reduce a tres fases:"
-          className="!mb-0"
-        />
-      </div>
-
-      <div className="mx-auto mt-20 max-w-[1280px] px-8">
+      <div className="mx-auto max-w-[1280px] px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           {PHASES.map((phase, i) => (
             <div
@@ -58,7 +42,6 @@ export default function Method() {
         <div className="mt-16">
           <ButtonSecondary href="/metodo">Ver el método completo →</ButtonSecondary>
         </div>
-      </div>
     </section>
   );
 }
