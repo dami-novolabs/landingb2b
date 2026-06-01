@@ -1,4 +1,5 @@
 import Header from "@/components/landing/Header";
+import Footer from "@/components/landing/Footer";
 import Hero from "@/components/opera/Hero";
 import ForWhom from "@/components/opera/ForWhom";
 import TheProblem from "@/components/opera/TheProblem";
@@ -7,6 +8,8 @@ import AtCompletion from "@/components/opera/AtCompletion";
 import Stack from "@/components/opera/Stack";
 import NotIncluded from "@/components/opera/NotIncluded";
 import Investment from "@/components/opera/Investment";
+import FAQs from "@/components/opera/FAQs";
+import FinalCTA from "@/components/opera/FinalCTA";
 
 export default function OperaPage() {
   return (
@@ -21,7 +24,10 @@ export default function OperaPage() {
         <Stack />
         <NotIncluded />
         <Investment />
+        <FAQs />
+        <FinalCTA />
       </main>
+      <Footer />
     </>
   );
 }
