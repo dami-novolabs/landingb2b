@@ -47,10 +47,9 @@ export default function Hero() {
           className="mb-12 max-w-[56ch] text-body-xl text-novo-charcoal"
           {...motionProps(400, reduced)}
         >
-          Trabajamos dentro de tu empresa durante 12 semanas con un criterio de
-          éxito firmado el día uno. Si al cierre no se cumple,{" "}
+          Un programa de 12 semanas donde trabajamos dentro de tu empresa — con tu equipo,{" "}
           <span className="font-medium text-novo-accent">
-            devolvemos el 50% de la inversión.
+            sobre un desafío real que mejore tu negocio.
           </span>
         </motion.p>
 

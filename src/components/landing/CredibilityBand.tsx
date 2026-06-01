@@ -28,11 +28,11 @@ export default function CredibilityBand() {
     <section className="border-b border-t border-novo-line bg-novo-cream px-8 py-[64px] md:py-[96px]">
       <div className="mx-auto mb-20 max-w-[720px]">
         <p className="text-[18px] text-novo-graphite">
-          Trabajan directo con{" "}
+          Trabajas directo con los fundadores:{" "}
           <strong className="font-medium text-novo-black">Tomás Volonté</strong>{" "}
           y{" "}
           <strong className="font-medium text-novo-black">Damián Sánchez</strong>
-          . Sin consultores junior. Sin subcontratación.
+          . <br> Sin consultores junior. Sin terciarizados.
         </p>
       </div>
 
