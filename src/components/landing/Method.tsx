@@ -42,6 +42,7 @@ export default function Method() {
         <div className="mt-16">
           <ButtonSecondary href="/metodo">Ver el método completo →</ButtonSecondary>
         </div>
+      </div>
     </section>
   );
 }
