@@ -4,20 +4,16 @@ import { motion, useReducedMotion } from "framer-motion";
 
 const STATS = [
   {
-    value: "72",
-    label: "PRODUCTOS DIGITALES CONSTRUIDOS DESDE CERO · 2017–2023",
+    value: "8",
+    label: "AÑOS CONSTRUYENDO DESDE CERO",
   },
   {
-    value: "18",
-    label: "EDICIONES DE STARTUP SCHOOL · 2023–2025",
+    value: "40",
+    label: "EMPRESAS ACOMOPAÑADAS",
   },
   {
     value: "360+",
-    label: "PROYECTOS ACOMPAÑADOS POR EL MÉTODO",
-  },
-  {
-    value: "52%",
-    label: "SIGUEN ACTIVOS Y FACTURANDO (DE LOS 360+)",
+    label: "PERSONAS APLICARON NUESTRO MÉTODO",
   },
 ];
 
@@ -28,15 +24,15 @@ export default function CredibilityBand() {
     <section className="border-b border-t border-novo-line bg-novo-cream px-8 py-[64px] md:py-[96px]">
       <div className="mx-auto mb-20 max-w-[720px]">
         <p className="text-[18px] text-novo-graphite">
-          Trabajan directo con{" "}
+          Trabajas directo con los fundadores:{" "}
           <strong className="font-medium text-novo-black">Tomás Volonté</strong>{" "}
           y{" "}
           <strong className="font-medium text-novo-black">Damián Sánchez</strong>
-          . Sin consultores junior. Sin subcontratación.
+          . <br /> Sin consultores junior. Sin terciarizados.
         </p>
       </div>
 
-      <div className="mx-auto grid max-w-[1280px] grid-cols-2 gap-8 md:grid-cols-4 md:gap-12">
+      <div className="mx-auto grid max-w-[1280px] grid-cols-2 gap-8 place-items-center md:grid-cols-3 md:gap-12">
         {STATS.map((stat, i) => (
           <motion.div
             key={stat.value}
