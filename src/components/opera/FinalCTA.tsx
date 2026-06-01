@@ -1,4 +1,5 @@
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import CalEmbed from "@/components/ui/CalEmbed";
 
 export default function FinalCTA() {
   return (
@@ -12,10 +13,8 @@ export default function FinalCTA() {
           el diagnóstico es el siguiente paso.
         </h2>
 
-        <div className="flex aspect-[16/10] w-full items-center justify-center rounded border border-novo-line bg-novo-cream-50">
-          <span className="font-mono text-sm text-novo-mid">
-            CAL.COM EMBED · A CONFIGURAR EN FASE 7
-          </span>
+        <div className="min-h-[600px] w-full">
+          <CalEmbed calLink="tom-novolabs/diagnostico-estrategico?source=opera" />
         </div>
 
         <div className="mt-12 flex items-center gap-3 font-mono text-mono-s text-novo-charcoal">

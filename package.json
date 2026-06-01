@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@fontsource/inter": "^5.2.8",
     "@fontsource/jetbrains-mono": "^5.2.8",
     "clsx": "^2.1.1",
