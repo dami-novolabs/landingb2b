@@ -4,20 +4,16 @@ import { motion, useReducedMotion } from "framer-motion";
 
 const STATS = [
   {
-    value: "72",
-    label: "PRODUCTOS DIGITALES CONSTRUIDOS DESDE CERO · 2017–2023",
+    value: "8",
+    label: "AÑOS CONSTRUYENDO DESDE CERO",
   },
   {
-    value: "18",
-    label: "EDICIONES DE STARTUP SCHOOL · 2023–2025",
+    value: "40",
+    label: "EMPRESAS ACOMOPAÑADAS",
   },
   {
     value: "360+",
-    label: "PROYECTOS ACOMPAÑADOS POR EL MÉTODO",
-  },
-  {
-    value: "52%",
-    label: "SIGUEN ACTIVOS Y FACTURANDO (DE LOS 360+)",
+    label: "PERSONAS APLICARON NUESTRO MÉTODO",
   },
 ];
 
