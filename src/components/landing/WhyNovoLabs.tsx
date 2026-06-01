@@ -25,8 +25,8 @@ const BLOCKS = [
   },
   {
     num: "04",
-    title: "Ningún proveedor firmó qué era 'éxito' antes de empezar.",
-    body: "Sin un criterio acordado y firmado al inicio, el proveedor puede justificar cualquier entregable como exitoso.",
+    title: "Ningún proveedor definió qué era 'éxito' antes de empezar.",
+    body: "Sin un criterio acordado al inicio, el proveedor puede justificar cualquier entregable como exitoso.",
     learning: "Sin criterio de éxito firmado, el proveedor siempre puede declarar victoria.",
   },
 ];

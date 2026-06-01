@@ -40,9 +40,8 @@ export default function TwoTracks() {
           eyebrow="DOS CAMINOS"
           title={
             <>
-              Innova o Opera.
-              <br />
-              Una empresa por trimestre, por track.
+              Programa Innova & Programa Opera.
+             
             </>
           }
           lead="Trabajamos un solo track por programa. La razón es simple: profundidad. Si tu empresa tiene los dos desafíos, resolvemos el más urgente primero. Eso lo definimos en el diagnóstico."

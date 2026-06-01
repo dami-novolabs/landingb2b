@@ -11,7 +11,7 @@ export default function HowWeCharge() {
           <br />
           50% en la semana 8, cuando hay algo construido.
           <br />
-          Si al cierre no se cumple el criterio firmado,
+          Si al cierre no se cumple el objetivo co-definido,
           <br />
           <span className="text-novo-accent">devolvemos el segundo tramo.</span>
         </h2>
