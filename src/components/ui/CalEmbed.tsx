@@ -1,53 +1,9 @@
-"use client";
-
-import Cal, { getCalApi } from "@calcom/embed-react";
-import { useEffect, useState } from "react";
-
 interface Props {
   calLink?: string;
 }
 
 export default function CalEmbed({ calLink }: Props) {
   const link = calLink ?? process.env.NEXT_PUBLIC_CAL_LINK;
-  const [ready, setReady] = useState(false);
-
-  useEffect(() => {
-    let cancelled = false;
-
-    (async () => {
-      try {
-        const cal = await getCalApi();
-        if (cancelled) return;
-        cal("ui", {
-          theme: "light",
-          cssVarsPerTheme: {
-            light: {
-              "cal-bg": "#F5F2EC",
-              "cal-text": "#0A0A0A",
-              "cal-brand": "#0A0A0A",
-              "cal-border": "#E5E1D9",
-            },
-            dark: {
-              "cal-bg": "#F5F2EC",
-              "cal-text": "#0A0A0A",
-              "cal-brand": "#0A0A0A",
-              "cal-border": "#E5E1D9",
-            },
-          },
-          hideEventTypeDetails: false,
-          layout: "month_view",
-        });
-        setReady(true);
-      } catch {
-        // Cal.com script blocked or unavailable — silently degrade
-        setReady(true);
-      }
-    })();
-
-    return () => {
-      cancelled = true;
-    };
-  }, []);
 
   if (!link) {
     return (
@@ -63,15 +19,17 @@ export default function CalEmbed({ calLink }: Props) {
     );
   }
 
+  // Strip any query-string source params — Cal.com iframe URLs don't accept them
+  const [slug] = link.split("?");
+  const src = `https://cal.com/${slug}?embed=true&layout=month_view&theme=light&bg=%23F5F2EC&fg=%230A0A0A&brandColor=%230A0A0A`;
+
   return (
-    <div style={{ minHeight: 600, width: "100%" }}>
-      {ready && (
-        <Cal
-          calLink={link}
-          style={{ width: "100%", height: "100%", overflow: "scroll" }}
-          config={{ layout: "month_view" }}
-        />
-      )}
-    </div>
+    <iframe
+      src={src}
+      title="Reservar reunión con Novo Labs"
+      className="h-full min-h-[700px] w-full border-0"
+      loading="lazy"
+      sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-top-navigation-by-user-activation"
+    />
   );
 }
