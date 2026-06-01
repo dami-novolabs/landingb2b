@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 const BLOCKS = [
@@ -32,6 +32,8 @@ const BLOCKS = [
 ];
 
 export default function WhyNovoLabs() {
+  const reduce = useReducedMotion();
+
   return (
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
@@ -51,8 +53,8 @@ export default function WhyNovoLabs() {
             <React.Fragment key={block.num}>
               {i > 0 && <hr className="my-16 border-novo-line" />}
               <motion.div
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={reduce ? { opacity: 1 } : { opacity: 0, y: 24 }}
+                whileInView={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{
                   duration: 0.5,

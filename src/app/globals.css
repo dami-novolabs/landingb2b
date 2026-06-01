@@ -5,6 +5,13 @@ body {
   @apply antialiased;
 }
 
+*:focus-visible {
+  outline: 2px solid var(--novo-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+  transition: outline-offset 150ms ease;
+}
+
 @keyframes slot-pulse {
   0%, 100% { opacity: 0.4; }
   50%       { opacity: 1; }

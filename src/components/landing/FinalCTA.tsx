@@ -1,4 +1,5 @@
 import { Eyebrow } from "@/components/ui/Eyebrow";
+import CalEmbed from "@/components/ui/CalEmbed";
 
 export default function FinalCTA() {
   return (
@@ -34,13 +35,9 @@ export default function FinalCTA() {
               </p>
             </div>
 
-            {/* Right — Cal.com placeholder */}
-            <div className="flex items-center justify-center bg-novo-cream-50 p-8 md:p-16">
-              <div className="flex aspect-[4/5] w-full items-center justify-center rounded border border-novo-line">
-                <span className="font-mono text-sm text-novo-mid">
-                  CAL.COM EMBED · A CONFIGURAR EN FASE 7
-                </span>
-              </div>
+            {/* Right — Cal.com embed */}
+            <div className="min-h-[600px] bg-novo-cream-50">
+              <CalEmbed calLink="tom-novolabs/diagnostico-estrategico" />
             </div>
 
           </div>

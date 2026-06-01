@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonSecondary } from "@/components/ui/ButtonSecondary";
 
@@ -25,6 +25,8 @@ const ADVISORS = [
 ];
 
 export default function Ecosystem() {
+  const reduce = useReducedMotion();
+
   return (
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
@@ -39,9 +41,9 @@ export default function Ecosystem() {
       {/* Logos grid */}
       <div className="mx-auto my-20 max-w-[1280px] px-8">
         <motion.div
-          className="grid grid-cols-3 gap-12 md:grid-cols-5"
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          className="grid grid-cols-2 gap-6 md:grid-cols-5 md:gap-12"
+          initial={reduce ? { opacity: 1 } : { opacity: 0, y: 16 }}
+          whileInView={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, ease: [0, 0, 0.2, 1] }}
         >
@@ -68,8 +70,8 @@ export default function Ecosystem() {
           {ADVISORS.map((advisor, i) => (
             <motion.div
               key={advisor.name}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={reduce ? { opacity: 1 } : { opacity: 0, y: 16 }}
+              whileInView={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0, 0, 0.2, 1] }}
             >

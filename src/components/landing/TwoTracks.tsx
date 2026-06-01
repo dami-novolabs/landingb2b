@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -31,6 +31,8 @@ const CARDS = [
 ];
 
 export default function TwoTracks() {
+  const reduce = useReducedMotion();
+
   return (
     <section id="tracks" className="bg-novo-cream-50 py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
@@ -53,8 +55,8 @@ export default function TwoTracks() {
           {CARDS.map((card, i) => (
             <motion.div
               key={card.href}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={reduce ? { opacity: 1 } : { opacity: 0, y: 16 }}
+              whileInView={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0, 0, 0.2, 1] }}
               className="flex"
