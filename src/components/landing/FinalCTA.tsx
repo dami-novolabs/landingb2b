@@ -17,8 +17,7 @@ export default function FinalCTA() {
                 Sin compromiso.
               </h2>
               <p className="mb-10 mt-6 text-body-l text-novo-charcoal">
-                En esta conversación evaluamos juntos si somos el equipo adecuado ¿
-                correcto para tu desafío.
+                En esta conversación evaluamos juntos si somos el equipo adecuado para tu desafío.
               </p>
               <p className="mb-4 font-mono text-mono-s uppercase text-novo-charcoal">
                 LO QUE VAMOS A CUBRIR
