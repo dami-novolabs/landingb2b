@@ -1,0 +1,102 @@
+import React from "react";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import { Eyebrow } from "@/components/ui/Eyebrow";
+
+const PHASES = [
+  {
+    eyebrow: "FASE 1 · SEMANAS 1–3",
+    title: "Diagnóstico operacional",
+    intro:
+      "Antes de automatizar nada, entender cómo opera la empresa hoy y dónde están los cuellos de botella reales.",
+    tasks: [
+      "Mapeo de procesos críticos (los que más tiempo consumen o más dependen de personas clave)",
+      "Cálculo de costo operativo por proceso: horas × tarifa equivalente × frecuencia",
+      "Identificación de los 3–5 procesos con mayor potencial de automatización",
+      "Matriz de impacto vs. complejidad: qué automatizar primero",
+    ],
+    deliverable:
+      "Mapa de procesos + ranking de cuellos de botella por impacto económico + matriz de priorización",
+  },
+  {
+    eyebrow: "FASE 2 · SEMANAS 4–7",
+    title: "Diseño de infraestructura",
+    intro:
+      "Con el diagnóstico claro, diseñar la arquitectura de agentes antes de construir. Validar el diseño con el equipo operativo.",
+    tasks: [
+      "Definición de la stack: qué agentes, qué automatizaciones, qué integraciones",
+      "Diseño del flujo: qué hace el sistema, qué hace la persona, cuál es el handoff",
+      "Estimación de ROI por implementación: horas ahorradas, reducción de errores, velocidad ganada",
+      'Validación del diseño con el equipo operativo antes de construir ("Mom Test de infraestructura": ¿el equipo lo usaría?)',
+    ],
+    deliverable: "Arquitectura + Stack + Estimación de ROI firmada",
+  },
+  {
+    eyebrow: "FASE 3 · SEMANAS 8–12",
+    title: "Construcción y adopción",
+    intro:
+      "Construir la infraestructura mínima que libera capacidad real y asegurar que el equipo la adopta.",
+    tasks: [
+      "Implementación de los agentes y automatizaciones priorizados",
+      "Testing con casos reales del equipo operativo",
+      "Documentación del sistema para que el equipo pueda mantenerlo",
+      "Sesión de cierre: métricas reales vs. métricas proyectadas",
+    ],
+    deliverable: "Sistema funcionando + documentación + métricas de impacto reales",
+  },
+];
+
+export default function HowWeWork() {
+  return (
+    <section id="metodo" className="bg-novo-cream-50 py-[80px] md:py-[128px]">
+      <div className="mx-auto max-w-[880px] px-8">
+        <SectionHeader
+          eyebrow="CÓMO TRABAJAMOS"
+          title={
+            <>
+              12 semanas. 3 fases.
+              <br />
+              Mismo método, aplicado hacia adentro.
+            </>
+          }
+          className="!mb-0"
+        />
+
+        <div className="mt-16">
+          {PHASES.map((phase, i) => (
+            <React.Fragment key={phase.eyebrow}>
+              {i > 0 && <hr className="my-20 border-novo-line" />}
+              <div>
+                <Eyebrow>{phase.eyebrow}</Eyebrow>
+                <h3 className="mb-6 font-display text-display-s text-novo-black">
+                  {phase.title}
+                </h3>
+                <p className="mb-8 text-body-l text-novo-charcoal">{phase.intro}</p>
+
+                <p className="mb-4 text-[14px] font-semibold text-novo-black">
+                  Qué hacemos:
+                </p>
+                <ul className="flex flex-col gap-3">
+                  {phase.tasks.map((task) => (
+                    <li
+                      key={task}
+                      className="flex gap-3 text-body-m leading-[1.6] text-novo-graphite"
+                    >
+                      <span className="flex-shrink-0 text-novo-mid">·</span>
+                      <span>{task}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-8 border-l-2 border-novo-accent pl-6">
+                  <p className="text-[17px] italic text-novo-black">
+                    Entregable de la fase: {phase.deliverable}
+                  </p>
+                </div>
+              </div>
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
