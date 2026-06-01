@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useScroll, useMotionValueEvent, motion, AnimatePresence } from "framer-motion";
 import { ButtonPrimary } from "@/components/ui/ButtonPrimary";
 import { cn } from "@/lib/utils";
@@ -44,9 +45,9 @@ export default function Header() {
         )}
       >
         <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between px-8">
-          <a href="/" className="font-display text-[22px] tracking-[-0.02em] text-novo-black">
+          <Link href="/" className="font-display text-[22px] tracking-[-0.02em] text-novo-black">
             Novo Labs
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-8 md:flex">
             {NAV_ITEMS.map((item) => (

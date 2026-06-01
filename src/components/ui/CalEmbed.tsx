@@ -27,6 +27,12 @@ export default function CalEmbed({ calLink }: Props) {
               "cal-brand": "#0A0A0A",
               "cal-border": "#E5E1D9",
             },
+            dark: {
+              "cal-bg": "#F5F2EC",
+              "cal-text": "#0A0A0A",
+              "cal-brand": "#0A0A0A",
+              "cal-border": "#E5E1D9",
+            },
           },
           hideEventTypeDetails: false,
           layout: "month_view",

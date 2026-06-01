@@ -24,8 +24,15 @@ const editorial = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Novo Labs",
-  description: "Programa estratégico B2B",
+  title: "Novo Labs — Programa estratégico para empresas que facturan $5M+",
+  description:
+    "Trabajamos dentro de tu empresa durante 12 semanas con un criterio de éxito firmado el día uno. Si al cierre no se cumple, devolvemos el 50% de la inversión.",
+  openGraph: {
+    title: "Novo Labs",
+    description: "Programa estratégico de 12 semanas. 50% reembolsable.",
+    type: "website",
+    locale: "es_AR",
+  },
 };
 
 export default function RootLayout({
