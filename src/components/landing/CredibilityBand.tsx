@@ -32,7 +32,7 @@ export default function CredibilityBand() {
           <strong className="font-medium text-novo-black">Tomás Volonté</strong>{" "}
           y{" "}
           <strong className="font-medium text-novo-black">Damián Sánchez</strong>
-          . <br> Sin consultores junior. Sin terciarizados.
+          . <br /> Sin consultores junior. Sin terciarizados.
         </p>
       </div>
 
