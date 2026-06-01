@@ -31,13 +31,15 @@ export default function Hero() {
             className="block font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
             {...motionProps(120, reduced)}
           >
-            Esto no es consultoría.
+            Transformá un desafío estratégico en un resultado
           </motion.span>
           <motion.span
             className="block font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
             {...motionProps(240, reduced)}
           >
-            Y tampoco una capacitación.
+            concreto
+            <br />
+            en 90 días.
           </motion.span>
         </h1>
 
