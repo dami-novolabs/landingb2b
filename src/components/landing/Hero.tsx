@@ -38,7 +38,7 @@ export default function Hero() {
             {...motionProps(240, reduced)}
           >
             concreto
-            <br />
+            
             en 90 días.
           </motion.span>
         </h1>
