@@ -32,7 +32,7 @@ export default function CredibilityBand() {
         </p>
       </div>
 
-      <div className="mx-auto grid max-w-[1280px] grid-cols-2 gap-8 md:grid-cols-4 md:gap-12">
+      <div className="mx-auto grid max-w-[1280px] grid-cols-2 gap-8 place-items-center md:grid-cols-3 md:gap-12">
         {STATS.map((stat, i) => (
           <motion.div
             key={stat.value}
