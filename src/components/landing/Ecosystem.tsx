@@ -68,15 +68,14 @@ const DURATION_S = 4 * ADVISORS.length;
 
 function AdvisorCard({ advisor }: { advisor: typeof ADVISORS[number] }) {
   return (
-    <div className="flex-shrink-0" style={{ width: CARD_WIDTH }}>
+    <div className="group flex-shrink-0" style={{ width: CARD_WIDTH }}>
       <div className="relative aspect-[4/5] w-full overflow-hidden rounded-md bg-novo-line">
         <Image
           src={advisor.image}
           alt={advisor.name}
           fill
-          className="object-cover"
+          className="object-cover grayscale transition-[filter] duration-500 ease-out group-hover:grayscale-0"
           sizes="280px"
-          // Image falls back to the bg-novo-line placeholder on error automatically
         />
       </div>
       <h4 className="mt-5 font-display text-[22px] leading-tight text-novo-black">
