@@ -22,7 +22,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ['"PP Editorial New"', 'Tiempos Headline', 'Georgia', 'serif'],
+        display: ['var(--font-display)', 'Georgia', 'serif'],
         sans:    ['Inter', 'system-ui', 'sans-serif'],
         mono:    ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },
