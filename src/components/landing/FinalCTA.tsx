@@ -10,7 +10,7 @@ export default function FinalCTA() {
 
             {/* Left — copy */}
             <div className="p-8 md:p-16">
-              <Eyebrow>EL DIAGNÓSTICO</Eyebrow>
+              <Eyebrow>EL PRIMER PASO</Eyebrow>
               <h2 className="font-display text-[36px] leading-[1.08] tracking-[-0.03em] text-novo-black md:text-[56px]">
                 45 minutos.
                 <br />
