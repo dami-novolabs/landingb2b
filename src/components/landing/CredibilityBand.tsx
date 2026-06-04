@@ -89,14 +89,34 @@ export default function CredibilityBand() {
 
   return (
     <section className="border-b border-t border-novo-line bg-novo-cream px-8 py-[64px] md:py-[96px]">
-      <div className="mx-auto mb-20 max-w-[720px]">
-        <p className="text-[18px] text-novo-graphite">
-          Trabajas directo con los fundadores:{" "}
-          <strong className="font-medium text-novo-black">Tomás Volonté</strong>{" "}
-          y{" "}
-          <strong className="font-medium text-novo-black">Damián Sánchez</strong>
-          . <br /> Sin consultores junior. Sin terciarizados.
+      <div className="mx-auto mb-16 max-w-[720px] text-center">
+        <p className="text-[18px] leading-[1.6] text-novo-graphite">
+          Trabajas directo con los fundadores.{" "}
+          Sin consultores junior. Sin terciarizados.
         </p>
+      </div>
+
+      {/* Founder portraits */}
+      <div className="mx-auto mb-20 flex max-w-[560px] justify-center gap-16">
+        {[
+          { name: "Tomás Volonté",  image: "/founders/tomas-volonte.png" },
+          { name: "Damián Sánchez", image: "/founders/damian-sanchez.png" },
+        ].map((founder) => (
+          <div key={founder.name} className="flex flex-col items-center gap-4">
+            <div className="relative h-[180px] w-[180px] overflow-hidden rounded-full bg-novo-line">
+              <Image
+                src={founder.image}
+                alt={founder.name}
+                fill
+                className="object-cover grayscale"
+                sizes="180px"
+              />
+            </div>
+            <p className="font-display text-[18px] tracking-[-0.01em] text-novo-black">
+              {founder.name}
+            </p>
+          </div>
+        ))}
       </div>
 
       <div className="mx-auto grid max-w-[1280px] grid-cols-2 gap-8 place-items-center md:grid-cols-3 md:gap-12">
