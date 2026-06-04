@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { SectionHeader } from "@/components/ui/SectionHeader";
+import { Search, Zap, BarChart2 } from "lucide-react";
 
 const BLOCKS = [
   {
@@ -37,16 +37,54 @@ export default function WhyNovoLabs() {
   return (
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
-        <SectionHeader
-          eyebrow="POR QUÉ NOVO LABS"
-          title={
-            <>
-              Lo que ya intentaron.
-              <br />
-              Y por qué no resolvió el problema.
-            </>
-          }
-        />
+        {/* Centred display-xl header, no eyebrow */}
+        <div className="mb-16 text-center">
+          <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+            Lorem ipsum dolor sit amet consectetur.
+          </h2>
+        </div>
+
+        {/* 3-column reasons grid */}
+        <div className="mt-16 mb-24 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-12">
+          {[
+            {
+              Icon: Search,
+              title: "Diagnóstico primero",
+              body: "Nunca llegamos con la solución antes de entender el problema. Mapeamos tu operación o tu iniciativa, cuantificamos el impacto real, y recién ahí definimos qué construir o validar primero.",
+            },
+            {
+              Icon: Zap,
+              title: "Nosotros hacemos el trabajo",
+              body: "No entregamos un deck con recomendaciones. Novolabs construye el equipo de agentes autónomos que necesita tu operación, o lidera el proceso completo de validación con clientes reales. Tu equipo toma las decisiones — nosotros ponemos los recursos.",
+            },
+            {
+              Icon: BarChart2,
+              title: "Resultados medibles, no promesas",
+              body: "Cada programa cierra con algo concreto: un sistema de agentes funcionando con métricas de ahorro reales, o evidencia de demanda concreta para decidir si vale la pena construirlo. Sin slides. Con datos.",
+            },
+          ].map(({ Icon, title, body }, i) => (
+            <motion.div
+              key={title}
+              initial={reduce ? { opacity: 1 } : { opacity: 0, y: 16 }}
+              whileInView={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{ duration: 0.5, delay: i * 0.1, ease: [0, 0, 0.2, 1] }}
+            >
+              <Icon size={28} className="text-novo-accent" strokeWidth={1.5} />
+              <h3 className="mt-6 mb-3 font-display text-display-s tracking-[-0.02em] text-novo-black">
+                {title}
+              </h3>
+              <p className="text-body-m leading-[1.6] text-novo-graphite">{body}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        <hr className="mb-24 border-novo-line" />
+
+        {/* Centered subtitle above problems list */}
+        <h3 className="mb-16 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
+          Lorem ipsum dolor sit amet
+        </h3>
 
         <div>
           {BLOCKS.map((block, i) => (

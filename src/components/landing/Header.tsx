@@ -8,8 +8,8 @@ import { ButtonPrimary } from "@/components/ui/ButtonPrimary";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
-  { label: "Innova", href: "#innova" },
-  { label: "Opera", href: "#opera" },
+  { label: "Innova", href: "/innova" },
+  { label: "Opera", href: "/opera" },
   { label: "Método", href: "#metodo" },
   { label: "Equipo", href: "#equipo" },
 ];

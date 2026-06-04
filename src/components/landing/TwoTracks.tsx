@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
@@ -36,18 +35,14 @@ export default function TwoTracks() {
   return (
     <section id="tracks" className="bg-novo-cream-50 py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
-        <SectionHeader
-          eyebrow="DOS CAMINOS"
-          title={
-            <>
-              Innova o Opera.
-              <br />
-              Una empresa por trimestre, por track.
-            </>
-          }
-          lead="Trabajamos un solo track por programa. La razón es simple: profundidad. Si tu empresa tiene los dos desafíos, resolvemos el más urgente primero. Eso lo definimos en el diagnóstico."
-          className="!mb-0"
-        />
+        <div className="text-center">
+          <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+            Lorem ipsum dolor sit amet consectetur.
+          </h2>
+          <p className="mx-auto mt-6 max-w-[56ch] text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-graphite">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+          </p>
+        </div>
       </div>
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
@@ -66,8 +61,15 @@ export default function TwoTracks() {
                 <h3 className="mb-6 font-display text-[30px] tracking-[-0.02em] text-novo-black">
                   {card.title}
                 </h3>
-                <p className="mb-4 text-body-m text-novo-charcoal">{card.body1}</p>
-                <p className="text-body-m text-novo-charcoal">{card.body2}</p>
+                <p className="mb-6 text-body-m text-novo-charcoal">{card.body1}</p>
+                <ul className="flex flex-col gap-3">
+                  {[0, 1, 2].map((n) => (
+                    <li key={n} className="flex items-start gap-2 text-body-m text-novo-charcoal">
+                      <span className="mt-0.5 shrink-0 text-novo-accent">→</span>
+                      Lorem ipsum dolor sit amet consectetur adipiscing.
+                    </li>
+                  ))}
+                </ul>
                 <div className="mt-auto border-t border-novo-line pt-8">
                   <p className="mb-4 font-mono text-mono-xs text-novo-mid">
                     {card.ideal}

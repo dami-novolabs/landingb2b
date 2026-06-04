@@ -1,5 +1,4 @@
 import React from "react";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const PHASES = [
@@ -49,19 +48,13 @@ export default function HowWeWork() {
   return (
     <section id="metodo" className="bg-novo-cream-50 py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
-        <SectionHeader
-          eyebrow="CÓMO TRABAJAMOS"
-          title={
-            <>
-              12 semanas. 3 fases.
-              <br />
-              Mismo método, aplicado hacia adentro.
-            </>
-          }
-          className="!mb-0"
-        />
 
-        <div className="mt-16">
+        {/* Header — centrado, display-xl */}
+        <h2 className="mb-16 text-center font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+          12 semanas. 3 fases. Mismo método, aplicado hacia adentro.
+        </h2>
+
+        <div>
           {PHASES.map((phase, i) => (
             <React.Fragment key={phase.eyebrow}>
               {i > 0 && <hr className="my-20 border-novo-line" />}

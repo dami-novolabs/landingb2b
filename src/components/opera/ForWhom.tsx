@@ -1,5 +1,3 @@
-import { SectionHeader } from "@/components/ui/SectionHeader";
-
 const SYMPTOMS = [
   '"El equipo está al límite y no podemos tomar más trabajo".',
   "Tu próxima ronda de crecimiento implicaba contratar a 3 o más personas, y no estás seguro de que sea la salida.",
@@ -12,21 +10,13 @@ export default function ForWhom() {
   return (
     <section className="bg-novo-cream-50 py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
-        <SectionHeader
-          eyebrow="PARA QUIÉN"
-          title={
-            <>
-              Si te sentís identificado con alguno
-              <br />
-              de estos síntomas, este programa
-              <br />
-              probablemente sea para vos.
-            </>
-          }
-          className="!mb-0"
-        />
 
-        <ul className="mt-16 flex flex-col gap-8">
+        {/* Header — centrado, display-xl */}
+        <h2 className="mb-16 text-center font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+          Si te sentís identificado con alguno de estos síntomas, este programa probablemente sea para vos.
+        </h2>
+
+        <ul className="flex flex-col gap-8">
           {SYMPTOMS.map((text) => (
             <li
               key={text}
