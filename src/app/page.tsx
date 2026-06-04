@@ -13,8 +13,8 @@ export default function Page() {
       <Header />
       <main>
         <Hero />
-        <CredibilityBand />
         <Ecosystem />
+        <CredibilityBand />
         <TwoTracks />
         <WhyNovoLabs />
         <FinalCTA />
