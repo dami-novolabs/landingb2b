@@ -1,54 +1,78 @@
-import React from "react";
-import { SectionHeader } from "@/components/ui/SectionHeader";
+"use client";
 
-const BLOCKS = [
+import { motion, useReducedMotion } from "framer-motion";
+
+const EASE = [0, 0, 0.2, 1] as const;
+
+const PROBLEMS = [
   {
     num: "01",
-    title: "Automatizan lo equivocado.",
-    body: "Empiezan por el proceso más visible o el que pidió el equipo más ruidoso, no por el que tiene el mayor costo operativo. El resultado: automatizan algo que ahorra 4 horas/semana y dejan intacto lo que consume 40.",
+    title: "El equipo está al límite",
+    body: "Uno o dos personas concentran el conocimiento de procesos críticos. Si se van o se enferman, la operación se frena. No es un problema de personas — es un problema de arquitectura.",
   },
   {
     num: "02",
-    title: "Compran herramientas antes de diagnosticar.",
-    body: "Licencias de Copilot, suscripción a Make, una cuenta de n8n. La empresa termina con 8 herramientas sueltas y ningún proceso resuelto. Las herramientas no son el problema — son el resultado de pensar al revés.",
+    title: "Las horas se van en tareas manuales",
+    body: "Clasificar emails, completar formularios, generar reportes, responder consultas repetitivas. Trabajo que consume tiempo senior y no genera valor estratégico.",
   },
   {
     num: "03",
-    title: "No miden el ROI antes de construir.",
-    body: "Si no podés decir cuánto cuesta hoy este proceso y cuánto ahorrarías al automatizarlo, no sabés si vale la pena construirlo. La mayoría de los proyectos arrancan sin esa línea base. Después es imposible justificar la inversión.",
+    title: "Más volumen significa más personal",
+    body: "Cada vez que el negocio crece, la respuesta es contratar. El ciclo tarda 3 a 6 meses y el costo se vuelve estructural. La operación no escala — escala el gasto.",
   },
 ];
 
 export default function TheProblem() {
-  return (
-    <section className="bg-novo-cream py-[80px] md:py-[128px]">
-      <div className="mx-auto max-w-[880px] px-8">
-        <SectionHeader
-          eyebrow="EL PROBLEMA"
-          title={
-            <>
-              Por qué la mayoría de los proyectos
-              <br />
-              de automatización fracasan.
-            </>
-          }
-          lead="Tres causas que vemos repetirse en cada empresa con la que hablamos."
-        />
+  const reduced = useReducedMotion() ?? false;
 
-        <div>
-          {BLOCKS.map((block, i) => (
-            <React.Fragment key={block.num}>
-              {i > 0 && <hr className="my-16 border-novo-line" />}
-              <div>
-                <p className="mb-4 font-mono text-[14px] text-novo-mid">{block.num}</p>
-                <h3 className="mb-5 font-display text-display-s tracking-[-0.02em] text-novo-black">
-                  {block.title}
-                </h3>
-                <p className="text-body-m leading-[1.65] text-novo-graphite">{block.body}</p>
-              </div>
-            </React.Fragment>
+  return (
+    <section className="bg-novo-cream-50 py-[80px] md:py-[128px]">
+      <div className="mx-auto max-w-[1280px] px-8">
+
+        {/* Header */}
+        <div className="mb-20 text-center">
+          <p className="mb-6 font-mono text-[13px] uppercase tracking-[0.08em] text-novo-graphite">
+            — EL PROBLEMA
+          </p>
+          <h2 className="mx-auto max-w-[16ch] font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+            Crecer significa contratar. Y contratar no escala.
+          </h2>
+        </div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-12">
+          {PROBLEMS.map((item, i) => (
+            <motion.div
+              key={item.num}
+              initial={reduced ? undefined : { opacity: 0, y: 16 }}
+              whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1, ease: EASE }}
+            >
+              <p className="mb-4 font-mono text-[13px] tracking-[0.04em] text-novo-mid">
+                {item.num}
+              </p>
+              <h3 className="mb-4 font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black">
+                {item.title}
+              </h3>
+              <p className="text-[16px] leading-[1.6] text-novo-graphite">
+                {item.body}
+              </p>
+            </motion.div>
           ))}
         </div>
+
+        {/* Dato destacado */}
+        <motion.p
+          className="mt-12 border-t border-novo-line pt-12 text-center font-mono text-[13px] tracking-[0.04em] text-novo-graphite"
+          initial={reduced ? undefined : { opacity: 0 }}
+          whileInView={reduced ? undefined : { opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3, ease: EASE }}
+        >
+          &ldquo;51% de empresas medianas no implementa IA porque no sabe por dónde empezar.&rdquo;
+        </motion.p>
+
       </div>
     </section>
   );

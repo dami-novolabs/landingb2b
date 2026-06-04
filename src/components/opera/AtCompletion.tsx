@@ -1,4 +1,3 @@
-import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 
 const DELIVERABLES = [
@@ -28,20 +27,16 @@ export default function AtCompletion() {
   return (
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
-        <SectionHeader
-          eyebrow="AL CIERRE"
-          title={
-            <>
-              Qué se queda en tu empresa
-              <br />
-              después del programa.
-            </>
-          }
-          lead="Infraestructura funcionando, no recomendaciones."
-          className="!mb-0"
-        />
 
-        <div className="mt-16 flex flex-col gap-6">
+        {/* Header — centrado, display-xl */}
+        <h2 className="mb-4 text-center font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+          Qué se queda en tu empresa después del programa.
+        </h2>
+        <p className="mb-16 text-center text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-charcoal">
+          Infraestructura funcionando, no recomendaciones.
+        </p>
+
+        <div className="flex flex-col gap-6">
           {DELIVERABLES.map((item) => (
             <Card key={item.num} as="article">
               <div className="grid grid-cols-1 gap-4 md:grid-cols-[60px_1fr] md:gap-6">

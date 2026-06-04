@@ -21,41 +21,48 @@ export default function Hero() {
 
   return (
     <section className="bg-novo-cream px-8 pb-[80px] pt-[96px] md:pb-[128px] md:pt-[160px]">
-      <div className="mx-auto max-w-[880px]">
-        <motion.div {...motionProps(0, reduced)}>
-          <Eyebrow>OPERA · TRACK DE ESCALADO OPERATIVO</Eyebrow>
-        </motion.div>
+      <div className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-16 md:grid-cols-2 md:gap-20">
 
-        <h1 className="mb-10">
-          <motion.span
-            className="block font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
+        {/* Left — text */}
+        <div>
+          <motion.div {...motionProps(0, reduced)}>
+            <Eyebrow>OPERA · TRACK DE ESCALADO OPERATIVO</Eyebrow>
+          </motion.div>
+
+          <motion.h1
+            className="mb-8 mt-6 font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
             {...motionProps(120, reduced)}
           >
-            Escalá la operación
-          </motion.span>
-          <motion.span
-            className="block font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
-            {...motionProps(240, reduced)}
+            Tu equipo hace trabajo que podría hacer un agente. Cambiemos eso.
+          </motion.h1>
+
+          <motion.p
+            className="mb-10 max-w-[52ch] text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-charcoal"
+            {...motionProps(300, reduced)}
           >
-            sin contratar a una sola persona más.
-          </motion.span>
-        </h1>
+            En 12 semanas, construimos la capa de agentes que multiplica la
+            capacidad del equipo actual. La medimos en horas liberadas y costo
+            operativo evitado, no en informes.
+          </motion.p>
 
-        <motion.p
-          className="mb-12 max-w-[56ch] text-body-xl text-novo-charcoal"
-          {...motionProps(400, reduced)}
+          <motion.div className="flex flex-wrap gap-6" {...motionProps(500, reduced)}>
+            <ButtonPrimary href="#agendar">
+              Agendar diagnóstico estratégico →
+            </ButtonPrimary>
+            <ButtonSecondary href="#metodo">Ver cómo trabajamos ↓</ButtonSecondary>
+          </motion.div>
+        </div>
+
+        {/* Right — image placeholder */}
+        <motion.div
+          className="aspect-[4/3] w-full rounded-md border border-novo-line bg-novo-line flex items-center justify-center"
+          {...motionProps(200, reduced)}
         >
-          En 12 semanas, construimos la capa de agentes que multiplica la
-          capacidad del equipo actual. La medimos en horas liberadas y costo
-          operativo evitado, no en informes.
-        </motion.p>
-
-        <motion.div className="flex flex-wrap gap-8" {...motionProps(600, reduced)}>
-          <ButtonPrimary href="#agendar">
-            Agendar diagnóstico estratégico →
-          </ButtonPrimary>
-          <ButtonSecondary href="#metodo">Ver cómo trabajamos ↓</ButtonSecondary>
+          <span className="font-mono text-[13px] tracking-[0.04em] text-novo-mid">
+            NOVOLABS OS COCKPIT
+          </span>
         </motion.div>
+
       </div>
     </section>
   );

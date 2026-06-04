@@ -1,10 +1,9 @@
 import React from "react";
-import { SectionHeader } from "@/components/ui/SectionHeader";
 
 const FAQS = [
   {
     q: "¿Quién es dueño de la infraestructura que construyen?",
-    a: 'Tu empresa. Las cuentas, las API keys, los workflows, los prompts, la documentación — todo queda a nombre de tu empresa. Si decidieran cortar el contrato con Novo Labs al cierre del programa, no perdés nada. Esa es la regla.',
+    a: "Tu empresa. Las cuentas, las API keys, los workflows, los prompts, la documentación — todo queda a nombre de tu empresa. Si decidieran cortar el contrato con Novo Labs al cierre del programa, no perdés nada. Esa es la regla.",
   },
   {
     q: "¿Cómo manejan la seguridad y los datos sensibles?",
@@ -32,10 +31,11 @@ export default function FAQs() {
   return (
     <section className="bg-novo-cream-50 py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[720px] px-8">
-        <SectionHeader
-          eyebrow="FAQS"
-          title="Preguntas que repetimos en cada diagnóstico."
-        />
+
+        {/* Header — centrado, display-xl */}
+        <h2 className="mb-16 text-center font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+          Preguntas que repetimos en cada diagnóstico.
+        </h2>
 
         <div>
           {FAQS.map((faq, i) => (

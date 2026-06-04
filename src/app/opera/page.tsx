@@ -1,24 +1,39 @@
 import type { Metadata } from "next";
 import Header from "@/components/landing/Header";
 import Footer from "@/components/landing/Footer";
+
+// Sección 1
 import Hero from "@/components/opera/Hero";
-import ForWhom from "@/components/opera/ForWhom";
+// Sección 2
 import TheProblem from "@/components/opera/TheProblem";
+// Sección 3
+import ForWhom from "@/components/opera/ForWhom";
+// Sección 4
+import Platform from "@/components/opera/Platform";
+// Sección 5
 import HowWeWork from "@/components/opera/HowWeWork";
+// Sección 6
+import Security from "@/components/opera/Security";
+// Sección 7
 import AtCompletion from "@/components/opera/AtCompletion";
-import Stack from "@/components/opera/Stack";
-import NotIncluded from "@/components/opera/NotIncluded";
+// Sección 8
+import Credibility from "@/components/opera/Credibility";
+// Sección 9
 import Investment from "@/components/opera/Investment";
+// Sección 10
 import FAQs from "@/components/opera/FAQs";
+// Sección 11
 import FinalCTA from "@/components/opera/FinalCTA";
+// Sección 12
+import ClosingCTA from "@/components/opera/ClosingCTA";
 
 export const metadata: Metadata = {
-  title: "Opera — Novo Labs | Transformación operativa para empresas $5M+",
+  title: "Opera — Novo Labs | Escalado operativo con agentes de IA",
   description:
-    "Rediseñamos los procesos críticos de tu empresa para eliminar cuellos de botella y multiplicar la capacidad operativa en 12 semanas. Con criterio de éxito firmado y garantía del 50%.",
+    "En 12 semanas construimos la capa de agentes que multiplica la capacidad de tu equipo. Medido en horas liberadas y costo operativo evitado, no en informes.",
   openGraph: {
     title: "Opera — Novo Labs",
-    description: "Transformación operativa en 12 semanas. 50% reembolsable.",
+    description: "Escalado operativo con agentes de IA en 12 semanas.",
     type: "website",
     locale: "es_AR",
   },
@@ -30,15 +45,17 @@ export default function OperaPage() {
       <Header />
       <main>
         <Hero />
-        <ForWhom />
         <TheProblem />
+        <ForWhom />
+        <Platform />
         <HowWeWork />
+        <Security />
         <AtCompletion />
-        <Stack />
-        <NotIncluded />
+        <Credibility />
         <Investment />
         <FAQs />
         <FinalCTA />
+        <ClosingCTA />
       </main>
       <Footer />
     </>
