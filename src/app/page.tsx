@@ -15,10 +15,10 @@ export default function Page() {
       <main>
         <Hero />
         <CredibilityBand />
+        <Ecosystem />
         <TwoTracks />
         <WhyNovoLabs />
         <Method />
-        <Ecosystem />
         <FinalCTA />
       </main>
       <Footer />
