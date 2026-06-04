@@ -55,7 +55,7 @@ export default function Hero() {
 
         <motion.div className="flex flex-wrap gap-8" {...motionProps(600, reduced)}>
           <ButtonPrimary href="#agendar">
-            Agendar diagnóstico estratégico →
+            Contactar a los fundadores de Novolabs →
           </ButtonPrimary>
           <ButtonSecondary href="#tracks">Ver cómo trabajamos ↓</ButtonSecondary>
         </motion.div>

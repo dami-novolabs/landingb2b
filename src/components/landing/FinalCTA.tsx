@@ -12,7 +12,7 @@ export default function FinalCTA() {
             <div className="p-8 md:p-16">
               <Eyebrow>EL DIAGNÓSTICO</Eyebrow>
               <h2 className="font-display text-[36px] leading-[1.08] tracking-[-0.03em] text-novo-black md:text-[56px]">
-                90 minutos.
+                45 minutos.
                 <br />
                 Sin compromiso.
               </h2>
