@@ -108,7 +108,7 @@ export default function CredibilityBand() {
                 src={founder.image}
                 alt={founder.name}
                 fill
-                className="object-cover grayscale"
+                className="object-cover"
                 sizes="180px"
               />
             </div>
