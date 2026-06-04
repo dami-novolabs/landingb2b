@@ -81,6 +81,11 @@ export default function WhyNovoLabs() {
 
         <hr className="mb-24 border-novo-line" />
 
+        {/* Centered subtitle above problems list */}
+        <h3 className="mb-16 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
+          Lorem ipsum dolor sit amet
+        </h3>
+
         <div>
           {BLOCKS.map((block, i) => (
             <React.Fragment key={block.num}>
