@@ -124,8 +124,10 @@ export default function CredibilityBand() {
           Socios que apoyan Novolabs
         </h3>
       </div>
-      <div className="pl-8 md:pl-[calc((100vw-880px)/2)]">
-        <AdvisorCarousel />
+      <div className="px-8 md:px-0">
+        <div className="mx-auto max-w-[1280px] md:pl-16">
+          <AdvisorCarousel />
+        </div>
       </div>
     </section>
   );
