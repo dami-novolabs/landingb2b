@@ -7,7 +7,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const CARDS = [
   {
-    eyebrow: "INNOVA · LANZAR",
+    eyebrow: "INNOVA ",
     title: "Lanzar una nueva línea de negocio sin quemar presupuesto.",
     body1:
       "Para empresas que tienen una idea de producto, servicio o unidad de negocio nueva y necesitan validar demanda real antes de invertir.",
@@ -18,7 +18,7 @@ const CARDS = [
     href: "/innova",
   },
   {
-    eyebrow: "OPERA · ESCALAR",
+    eyebrow: "OPERA",
     title: "Escalar la operación con IA sin sumar headcount.",
     body1:
       "Para empresas con procesos manuales que ya no pueden crecer sin más gente. Diagnosticamos los cuellos de botella por impacto económico y construimos la infraestructura de agentes que libera capacidad real.",
@@ -40,6 +40,9 @@ export default function TwoTracks() {
           <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
             Trabajas directo con los fundadores, sin consultores.
           </h2>
+          <p className="mx-auto mt-6 max-w-[56ch] text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-graphite">
+            Por eso solo aceptamos 2 clientes en simultáneo.
+          </p>
 
           {/* Founder portraits */}
           <div className="mx-auto mt-12 flex max-w-[560px] justify-center gap-16">
@@ -71,7 +74,7 @@ export default function TwoTracks() {
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
         <h3 className="mb-12 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
-          Lorem Ipsum
+          Dos Programas, un equipo.
         </h3>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
