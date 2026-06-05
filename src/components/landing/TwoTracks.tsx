@@ -40,6 +40,9 @@ export default function TwoTracks() {
           <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
             Trabajas directo con los fundadores, sin consultores.
           </h2>
+          <p className="mx-auto mt-6 max-w-[56ch] text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-graphite">
+            Por eso solo aceptamos 2 clientes en simultáneo.
+          </p>
 
           {/* Founder portraits */}
           <div className="mx-auto mt-12 flex max-w-[560px] justify-center gap-16">
