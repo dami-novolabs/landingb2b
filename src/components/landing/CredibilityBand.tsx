@@ -121,8 +121,6 @@ export default function CredibilityBand() {
           </div>
         ))}
       </div>
-        ))}
-      </div>
 
       <div className="mx-auto grid max-w-[1280px] grid-cols-2 gap-8 place-items-center md:grid-cols-3 md:gap-12">
         {STATS.map((stat, i) => (
