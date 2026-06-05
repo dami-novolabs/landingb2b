@@ -14,9 +14,9 @@ export default function Page() {
       <main>
         <Hero />
         <Ecosystem />
+        <WhyNovoLabs />
         <CredibilityBand />
         <TwoTracks />
-        <WhyNovoLabs />
         <FinalCTA />
       </main>
       <Footer />

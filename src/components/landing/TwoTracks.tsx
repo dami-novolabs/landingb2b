@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
+import Image from "next/image";
 import { Card } from "@/components/ui/Card";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
@@ -13,7 +14,7 @@ const CARDS = [
     body2:
       "En 12 semanas, tu equipo aprende a hablar con clientes reales, identificar el problema urgente y diseñar una oferta con compromiso de compra.",
     ideal: "IDEAL PARA: CEO · VP INNOVACIÓN · CPO",
-    cta: "Conocer Innova",
+    cta: "Conocer Programa Innova",
     href: "/innova",
   },
   {
@@ -24,7 +25,7 @@ const CARDS = [
     body2:
       "En 12 semanas, tu equipo trabaja con una capa de IA propia, documentada y de tu propiedad.",
     ideal: "IDEAL PARA: CEO · COO · DIRECTOR OPERACIONES · CFO",
-    cta: "Conocer Opera",
+    cta: "Conocer Programa Opera",
     href: "/opera",
   },
 ];
@@ -37,15 +38,42 @@ export default function TwoTracks() {
       <div className="mx-auto max-w-[880px] px-8">
         <div className="text-center">
           <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
-            Lorem ipsum dolor sit amet consectetur.
+            Trabajas directo con los fundadores, sin consultores.
           </h2>
-          <p className="mx-auto mt-6 max-w-[56ch] text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-graphite">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
-          </p>
+
+          {/* Founder portraits */}
+          <div className="mx-auto mt-12 flex max-w-[560px] justify-center gap-16">
+            {[
+              { name: "Tomás Volonté",  image: "/founders/tomas-volonte.png" },
+              { name: "Damián Sánchez", image: "/founders/damian-sanchez.png" },
+            ].map((founder) => (
+              <div key={founder.name} className="flex flex-col items-center gap-4">
+                <div className="relative h-[180px] w-[180px] overflow-hidden rounded-full bg-novo-line">
+                  <Image
+                    src={founder.image}
+                    alt={founder.name}
+                    fill
+                    className="object-cover"
+                    sizes="180px"
+                  />
+                </div>
+                <p className="font-display text-[18px] tracking-[-0.01em] text-novo-black">
+                  {founder.name}
+                </p>
+                <p className="text-[14px] font-light text-novo-mid">
+                  Co-fundador de Novolabs
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
+        <h3 className="mb-12 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
+          Lorem Ipsum
+        </h3>
+
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {CARDS.map((card, i) => (
             <motion.div
