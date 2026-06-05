@@ -115,6 +115,9 @@ export default function CredibilityBand() {
             <p className="font-display text-[18px] tracking-[-0.01em] text-novo-black">
               {founder.name}
             </p>
+            <p className="text-[14px] font-light text-novo-mid">
+              Co-fundador de Novolabs
+            </p>
           </div>
         ))}
       </div>
