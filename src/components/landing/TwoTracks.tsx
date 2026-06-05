@@ -71,7 +71,7 @@ export default function TwoTracks() {
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
         <h3 className="mb-12 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
-          Lorem Ipsum
+          Dos Programas, un equipo.
         </h3>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
