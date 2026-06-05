@@ -4,14 +4,14 @@ import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 
 const ADVISORS = [
-  { name: "Alex Dantart",       image: "/advisors/alex-dantart.png",       bio: "Emprendedor, inversor ángel y especialista en inteligencia artificial." },
-  { name: "Emiliano Chamorro",  image: "/advisors/emiliano-chamorro.png",  bio: "Fundador del Instituto Baikal, enfocado en formación y desarrollo de talento." },
-  { name: "Eduardo Amadeo",     image: "/advisors/eduardo-amadeo.png",     bio: "Venture Partner en Overboost e inversor en Kamay Ventures." },
+  { name: "Alex Dantart",       image: "/advisors/alex-dantart.png",       bio: "30+ años en tecnología. Experto en IA. Construyó +30 empresas y vendió 5." },
+  { name: "Emiliano Chamorro",  image: "/advisors/emiliano-chamorro.png",  bio: "Referente en toma de decisiones estratégicas y especialista en finanzas con trayectoria emprendedora." },
+  { name: "Eduardo Amadeo",     image: "/advisors/eduardo-amadeo.png",     bio: "Experto en innovación Corporativa. +10 años operando fondos de capital de riesgo en 4 países." },
   { name: "Agustín Linenberg",  image: "/advisors/agustin-linenberg.png",  bio: "Fundador de Aerolab. Inversor, mentor, advisor y Board Member en SoDA." },
-  { name: "Felipe Mendiguren",  image: "/advisors/felipe-mendiguren.png",  bio: "Empresario e inversor ángel con foco en crecimiento y desarrollo de compañías." },
-  { name: "Felipe Polo",        image: "/advisors/felipe-polo.png",        bio: "Co-founder & CEO de Orbitant, especializada en AI Engineering." },
-  { name: "David Tomás",        image: "/advisors/david-tomas.png",        bio: "Co-founder & CEO de Cyberclick. Autor de La empresa más feliz del mundo." },
-  { name: "Juanjo Mostazo",     image: "/advisors/juanjo-mostazo.png",     bio: "Ingeniero y emprendedor (Homa Games). Inversor en KFund." },
+  { name: "Felipe Mendiguren",  image: "/advisors/felipe-mendiguren.png",  bio: "Operador serial de compañías. Ingeñiero con empresas vendidas y más de 30 inversiones en compañías de tecnología." },
+  { name: "Felipe Polo",        image: "/advisors/felipe-polo.png",        bio: "Ingeniero que escaló equipos de tecnología a escala internacional. 6 empresas creadas, 2 empresas vendidas." },
+  { name: "David Tomás",        image: "/advisors/david-tomas.png",        bio: "25 años liderando operaciones de más de 100 personas en tecnología. Autor de libros Best Seller." },
+  { name: "Juanjo Mostazo",     image: "/advisors/juanjo-mostazo.png",     bio: "Ingeniero escaló una empresa a $100M+ USD de facturación. Inversor en casi 200 negocios." },
 ];
 
 const CARD_WIDTH = 280;
