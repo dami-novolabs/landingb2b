@@ -25,7 +25,7 @@ const ADVISORS = [
   { name: "Agustín Linenberg",  image: "/advisors/agustin-linenberg.png",  bio: "+10 años acompañando a grandes empresas a escalar con tecnología. Referente en productos digitales en Latinoamérica." },
   { name: "Felipe Mendiguren",  image: "/advisors/felipe-mendiguren.png",  bio: "Operador serial de compañías. Ingeñiero con empresas vendidas y más de 30 inversiones en compañías de tecnología." },
   { name: "Felipe Polo",        image: "/advisors/felipe-polo.png",        bio: "Ingeniero que escaló equipos de tecnología a escala internacional. 6 empresas creadas, 2 empresas vendidas." },
-    { name: "Emiliano Chamorro",  image: "/advisors/emiliano-chamorro.png",  bio: "Una de las mentes más interdisciplinarias del ecosistema emprendedor hispanohablante. Combina derecho, finanzas y emprendimiento serial con la capacidad de reunir y articular talentos de primer nivel." },
+    { name: "Emiliano Chamorro",  image: "/advisors/emiliano-chamorro.png",  bio: "Una de las mentes más interdisciplinarias del ecosistema hispanohablante. Combina derecho, finanzas y emprendimiento serial." },
   { name: "David Tomás",        image: "/advisors/david-tomas.png",        bio: "25 años liderando operaciones de más de 100 personas en tecnología. Autor de libros Best Seller." },
 ];
 
