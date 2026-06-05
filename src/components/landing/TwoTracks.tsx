@@ -7,7 +7,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const CARDS = [
   {
-    eyebrow: "INNOVA · LANZAR",
+    eyebrow: "INNOVA ",
     title: "Lanzar una nueva línea de negocio sin quemar presupuesto.",
     body1:
       "Para empresas que tienen una idea de producto, servicio o unidad de negocio nueva y necesitan validar demanda real antes de invertir.",
@@ -18,7 +18,7 @@ const CARDS = [
     href: "/innova",
   },
   {
-    eyebrow: "OPERA · ESCALAR",
+    eyebrow: "OPERA",
     title: "Escalar la operación con IA sin sumar headcount.",
     body1:
       "Para empresas con procesos manuales que ya no pueden crecer sin más gente. Diagnosticamos los cuellos de botella por impacto económico y construimos la infraestructura de agentes que libera capacidad real.",
