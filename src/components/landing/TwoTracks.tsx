@@ -14,7 +14,7 @@ const CARDS = [
     body2:
       "En 12 semanas, tu equipo aprende a hablar con clientes reales, identificar el problema urgente y diseñar una oferta con compromiso de compra.",
     ideal: "IDEAL PARA: CEO · VP INNOVACIÓN · CPO",
-    cta: "Conocer Innova",
+    cta: "Conocer Programa Innova",
     href: "/innova",
   },
   {
@@ -25,7 +25,7 @@ const CARDS = [
     body2:
       "En 12 semanas, tu equipo trabaja con una capa de IA propia, documentada y de tu propiedad.",
     ideal: "IDEAL PARA: CEO · COO · DIRECTOR OPERACIONES · CFO",
-    cta: "Conocer Opera",
+    cta: "Conocer Programa Opera",
     href: "/opera",
   },
 ];
