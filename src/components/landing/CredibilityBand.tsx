@@ -7,7 +7,7 @@ const ADVISORS = [
   { name: "Alex Dantart",       image: "/advisors/alex-dantart.png",       bio: "30+ años en tecnología. Experto en IA. Construyó +30 empresas y vendió 5." },
   { name: "Emiliano Chamorro",  image: "/advisors/emiliano-chamorro.png",  bio: "Referente en toma de decisiones estratégicas y especialista en finanzas con trayectoria emprendedora." },
   { name: "Eduardo Amadeo",     image: "/advisors/eduardo-amadeo.png",     bio: "Experto en innovación Corporativa. +10 años operando fondos de capital de riesgo en 4 países." },
-  { name: "Agustín Linenberg",  image: "/advisors/agustin-linenberg.png",  bio: "Fundador de Aerolab. Inversor, mentor, advisor y Board Member en SoDA." },
+  { name: "Agustín Linenberg",  image: "/advisors/agustin-linenberg.png",  bio: "+10 años acompañando a grandes empresas a escalar con tecnología. Referente en productos digitales en Latinoamérica." },
   { name: "Felipe Mendiguren",  image: "/advisors/felipe-mendiguren.png",  bio: "Operador serial de compañías. Ingeñiero con empresas vendidas y más de 30 inversiones en compañías de tecnología." },
   { name: "Felipe Polo",        image: "/advisors/felipe-polo.png",        bio: "Ingeniero que escaló equipos de tecnología a escala internacional. 6 empresas creadas, 2 empresas vendidas." },
   { name: "David Tomás",        image: "/advisors/david-tomas.png",        bio: "25 años liderando operaciones de más de 100 personas en tecnología. Autor de libros Best Seller." },
