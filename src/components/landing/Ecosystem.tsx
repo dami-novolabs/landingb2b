@@ -48,7 +48,8 @@ export default function Ecosystem() {
                 alt={logo.name}
                 width={120}
                 height={40}
-                className="max-h-10 w-auto object-contain"
+                className="max-h-10 object-contain"
+                style={{ width: "auto" }}
               />
             </div>
           ))}
