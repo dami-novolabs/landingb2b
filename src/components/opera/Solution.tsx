@@ -11,7 +11,7 @@ const BLOCKS = [
   },
   {
     num: "02",
-    title: "La ventaja compone.",
+    title: "La ventaja es acumulativa.",
     body: "Cada mes que pasa, los que ya implementaron generan más datos, afinan mejor sus agentes y bajan más sus costos. La brecha entre el que empezó hace seis meses y el que empieza hoy no es lineal — es compuesta.",
   },
   {
