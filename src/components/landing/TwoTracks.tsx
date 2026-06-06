@@ -7,17 +7,6 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const CARDS = [
   {
-    eyebrow: "INNOVA ",
-    title: "Lanzar una nueva línea de negocio sin quemar presupuesto.",
-    body1:
-      "Para empresas que tienen una idea de producto, servicio o unidad de negocio nueva y necesitan validar demanda real antes de invertir.",
-    body2:
-      "En 12 semanas, tu equipo aprende a hablar con clientes reales, identificar el problema urgente y diseñar una oferta con compromiso de compra.",
-    ideal: "IDEAL PARA: CEO · VP INNOVACIÓN · CPO",
-    cta: "Conocer Programa Innova",
-    href: "/innova",
-  },
-  {
     eyebrow: "OPERA",
     title: "Escalar la operación con IA sin sumar headcount.",
     body1:
@@ -41,7 +30,7 @@ export default function TwoTracks() {
             Trabajas directo con los fundadores, sin consultores.
           </h2>
           <p className="mx-auto mt-6 max-w-[56ch] text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-graphite">
-            Por eso solo aceptamos 2 clientes en simultáneo.
+            Por eso solo aceptamos 2 clientes por trimestre.
           </p>
 
           {/* Founder portraits */}
@@ -74,10 +63,11 @@ export default function TwoTracks() {
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
         <h3 className="mb-12 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
-          Dos Programas, un equipo.
+          Lorem Ipsum.
         </h3>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="flex justify-center">
+          <div className="w-full max-w-[560px]">
           {CARDS.map((card, i) => (
             <motion.div
               key={card.href}
@@ -118,6 +108,7 @@ export default function TwoTracks() {
               </Card>
             </motion.div>
           ))}
+          </div>
         </div>
       </div>
     </section>
