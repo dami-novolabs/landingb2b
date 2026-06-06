@@ -33,9 +33,6 @@ export default function WhyNovoLabs() {
       <div className="mx-auto max-w-[880px] px-8">
         {/* Centred display-xl header, no eyebrow */}
         <div className="mb-16 text-center">
-          <p className="mb-4 font-mono text-[13px] uppercase tracking-[0.08em] text-novo-graphite">
-            CONSULTORÍA DE AUTOMATIZACIÓN CON IA
-          </p>
           <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
             Otros te dicen qué hacer. Nosotros lo hacemos y te enseñamos a continuarlo.
           </h2>
