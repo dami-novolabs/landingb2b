@@ -54,15 +54,12 @@ export default function Header() {
             />
           </Link>
 
-          <nav className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-8 md:flex">
             {NAV_ITEMS.map((item) => (
               <NavLink key={item.href} href={item.href}>
                 {item.label}
               </NavLink>
             ))}
-          </nav>
-
-          <div className="hidden md:block">
             <ButtonPrimary href="#agendar" className="px-5 py-[10px] text-[14px]">
               Agendar diagnóstico →
             </ButtonPrimary>
