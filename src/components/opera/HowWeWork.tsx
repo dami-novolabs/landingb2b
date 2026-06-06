@@ -77,11 +77,7 @@ export default function HowWeWork() {
                   ))}
                 </ul>
 
-                <div className="mt-8 border-l-2 border-novo-accent pl-6">
-                  <p className="text-[17px] italic text-novo-black">
-                    Entregable de la fase: {phase.deliverable}
-                  </p>
-                </div>
+
               </div>
             </React.Fragment>
           ))}
