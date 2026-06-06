@@ -8,7 +8,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 const CARDS = [
   {
     eyebrow: "Programa Opera - 12 semanas",
-    title: "Tu Sistema Operativo de Agentes Autónomos.",
+    title: "Sistema Operativo de Agentes Autónomos que potencian tu equipo.",
     body1:
       "Diagnosticamos los cuellos de botella de tu operación por impacto económico, construimos los agentes que más capacidad liberan y los dejamos operando dentro de tu equipo. Doce semanas, una sola modalidad: hecho.",
     body2:
