@@ -13,8 +13,8 @@ const BLOCKS = [
   },
   {
     num: "02",
-    title: "Capacitaste al equipo. Nadie aplicó nada.",
-    body: "Durante el programa, entusiasmo. De vuelta al día a día, la urgencia ganó en 72 horas.",
+    title: "Capacitación sin ejecución es entretenimiento caro.",
+    body: "Mientras duró, entusiasmo. Cuando terminó tu equipo volvió a operar como antes.",
     learning: "Sin estructura, lo urgente siempre le gana a lo importante.",
   },
   {
