@@ -12,9 +12,7 @@ export default function FinalCTA() {
             <div className="p-8 md:p-16">
               <Eyebrow>EL PRIMER PASO</Eyebrow>
               <h2 className="font-display text-[36px] leading-[1.08] tracking-[-0.03em] text-novo-black md:text-[56px]">
-                45 minutos.
-                <br />
-                Sin compromiso.
+                Descubrir qué oportunidades tu negocio puede capitalizar.
               </h2>
               <p className="mb-10 mt-6 text-body-l text-novo-charcoal">
                 En esta primera conversación evaluamos juntos si nuestro programa es lo que necesita tu negocio (o no).
@@ -25,11 +23,10 @@ export default function FinalCTA() {
               <ul className="space-y-1 text-body-m leading-[1.8] text-novo-charcoal">
                 <li>→ Qué desafío estratégico tenés que resolver</li>
                 <li>→ Qué retorno esperas de esta inversión</li>
-                <li>→ Cómo sería trabajar juntos (si hay encaje)</li>
+                <li>→ Qué implica trabajar juntos</li>
               </ul>
               <p className="mt-10 text-body-m italic text-novo-charcoal">
-                No vendemos nada en la llamada. Descubrimos si hay oportunidades para capitalizar.
-                Si no, te decimos a dónde más buscar.
+                No vendemos nada en la llamada, primero hay que descubrir si hay encaje.
               </p>
             </div>
 
