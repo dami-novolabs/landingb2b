@@ -62,6 +62,9 @@ export default function TwoTracks() {
       </div>
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
+        <h3 className="mb-12 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
+          Te ayudamos a lograr más, gastar menos y crecer sin contratar.
+        </h3>
 
         <div className="flex justify-center">
           <div className="w-full max-w-[560px]">
