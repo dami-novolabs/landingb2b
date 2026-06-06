@@ -26,7 +26,7 @@ export default function FinalCTA() {
                 <li>→ Cómo sería trabajar juntos (si hay encaje)</li>
               </ul>
               <p className="mt-10 text-body-m italic text-novo-charcoal">
-                No vendemos nada en la llamada, sólo descubrimos si hay encaje.
+                No vendemos nada en la llamada, primero hay que descubrir si hay encaje.
               </p>
             </div>
 
