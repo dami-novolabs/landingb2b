@@ -40,7 +40,7 @@ export default function WhyNovoLabs() {
         {/* Centred display-xl header, no eyebrow */}
         <div className="mb-16 text-center">
           <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
-            Lorem ipsum dolor sit amet consectetur.
+            No es consultoría ni tampoco una capacitación. Es mejor.
           </h2>
         </div>
 
