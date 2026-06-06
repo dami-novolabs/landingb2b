@@ -8,26 +8,20 @@ const BLOCKS = [
   {
     num: "01",
     title: "Contrataste un consultor.",
-    body: "Se la pasó semanas relevando información y entregó un documento de 80 páginas con recomendaciones. Tu empresa siguió en el mismo lugar.",
-    learning: "Hay que embarrarse para hacer que las cosas pasen.",
+    body: "Pasó semanas relevando información y entregó 80 páginas de recomendaciones. Tu operación siguió en el mismo lugar.",
+    learning: "Hay que embarrarse para que las cosas pasen.",
   },
   {
     num: "02",
-    title: "Invirtieron en capacitación. El equipo no aplicó nada.",
-    body: "Durante el programa, entusiasmo. Al volver al día a día, la urgencia ganó en 72 horas.",
-    learning: "El conocimiento que no se aplica en 30 días no se aplica nunca.",
+    title: "Capacitaste al equipo. Nadie aplicó nada.",
+    body: "Durante el programa, entusiasmo. De vuelta al día a día, la urgencia ganó en 72 horas.",
+    learning: "Sin estructura, lo urgente siempre le gana a lo importante.",
   },
   {
     num: "03",
     title: "Intentaron resolverlo internamente. Murió en el tercer mes.",
     body: "Buena voluntad, equipo capaz. La primera urgencia operativa le ganó al proyecto. Sin metodología, las iniciativas pierden impulso ante cualquier imprevisto.",
     learning: "Sin estructura, el negocio actual siempre le gana a la iniciativa nueva.",
-  },
-  {
-    num: "04",
-    title: "Ningún proveedor firmó qué era 'éxito' antes de empezar.",
-    body: "Sin un criterio acordado y firmado al inicio, el proveedor puede justificar cualquier entregable como exitoso.",
-    learning: "Sin criterio de éxito firmado, el proveedor siempre puede declarar victoria.",
   },
 ];
 
