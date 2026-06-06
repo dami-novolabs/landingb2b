@@ -44,17 +44,17 @@ export default function WhyNovoLabs() {
             {
               Icon: Search,
               title: "Diagnóstico antes que solución",
-              body: "Mapeamos tu operación, cuantificamos dónde se pierde tiempo y dinero, y recién ahí definimos qué construir o validar. Sin asumir. Sin templates.",
+              body: "Mapeamos tu operación, cuantificamos dónde se pierde tiempo y dinero, y recién ahí definimos el plan de acción. Sin asumir. Sin enlatados.",
             },
             {
               Icon: Zap,
               title: "Ejecutamos, no recomendamos",
-              body: "Construimos el equipo de agentes autónomos que tu operación necesita, o lideramos la validación completa con clientes reales. Tu equipo decide la dirección. Nosotros ponemos las manos.",
+              body: "Construimos el equipo de agentes de IA autónomos que tu operación necesita. Tu equipo decide las prioridades. Nosotros ponemos las manos.",
             },
             {
               Icon: BarChart2,
               title: "Salimos con datos, no con PDFs",
-              body: "Cada programa cierra con algo concreto: un sistema de agentes corriendo con métricas de ahorro reales, o evidencia validada de demanda para decidir si vale construirlo. Medible. Verificable. Tuyo.",
+              body: "Cada programa cierra con algo concreto: un sistema de agentes corriendo con métricas de ahorro reales.Verificable. Tuyo.",
             },
           ].map(({ Icon, title, body }, i) => (
             <motion.div
