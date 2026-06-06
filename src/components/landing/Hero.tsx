@@ -31,13 +31,7 @@ export default function Hero() {
             className="block font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
             {...motionProps(120, reduced)}
           >
-            Transformá un desafío estratégico en un resultado
-          </motion.span>
-          <motion.span
-            className="block font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
-            {...motionProps(240, reduced)}
-          >
-            concreto en 90 días.
+            Crecer ya no debería significar contratar.
           </motion.span>
         </h1>
 
@@ -45,7 +39,7 @@ export default function Hero() {
           className="mb-12 max-w-[56ch] text-body-xl text-novo-charcoal"
           {...motionProps(400, reduced)}
         >
-          Un programa de 12 semanas donde trabajamos dentro de tu empresa — con tu equipo,{" "}
+          Construimos los agentes de IA que tu operación necesita para escalar. En 12 semanas, dentro de tu empresa, y trabajando con tu equipo.{" "}
           <span className="font-medium text-novo-accent">
             sobre un desafío real que mejore tu negocio.
           </span>

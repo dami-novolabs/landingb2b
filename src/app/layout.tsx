@@ -24,21 +24,21 @@ const editorial = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Automatización con IA para Empresas | Novolabs — Buenos Aires & Madrid",
+  title: "Escalar sin contratar — Agentes de IA para tu empresa | Novolabs",
   description:
-    "Novolabs construye infraestructura de agentes de IA dentro de tu empresa en 12 semanas. Para CEOs y COOs que quieren escalar sin contratar. Solo 2 clientes por trimestre.",
+    "Construimos los agentes de IA que tu operación necesita para escalar. En 12 semanas, dentro de tu empresa, trabajando con tu equipo. Sin aumentar headcount.",
   keywords: [
-    "automatización de operaciones con IA para empresas",
-    "implementar agentes de IA en empresa",
-    "consultoría de automatización con IA",
-    "escalar operaciones sin aumentar headcount",
+    "agentes de IA para empresas",
+    "escalar operaciones sin contratar",
+    "automatización con IA empresa",
+    "implementar IA en operaciones",
     "agentes autónomos empresa",
     "Novolabs",
   ],
   openGraph: {
-    title: "Automatización con IA para Empresas | Novolabs — Buenos Aires & Madrid",
+    title: "Escalar sin contratar — Agentes de IA para tu empresa | Novolabs",
     description:
-      "Novolabs construye infraestructura de agentes de IA dentro de tu empresa en 12 semanas. Para CEOs y COOs que quieren escalar sin contratar. Solo 2 clientes por trimestre.",
+      "Construimos los agentes de IA que tu operación necesita para escalar. En 12 semanas, dentro de tu empresa, trabajando con tu equipo.",
     type: "website",
     locale: "es_AR",
   },
