@@ -16,7 +16,7 @@ const CARDS = [
     bullets: [
       "Sistema de agentes operando los procesos que más tiempo y dinero te consumen hoy.",
       "Métricas reales: horas liberadas y reducción del costo operativo.",
-      "Lorem ipsum dolor sit amet consectetur adipiscing.",
+      "Tu equipo capacitado para trabajar con nuevas tecnologías.",
     ],
     ideal: "IDEAL PARA: CEO · COO · DIRECTOR OPERACIONES · CFO",
     cta: "Cómo funciona el programa",
