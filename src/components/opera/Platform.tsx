@@ -38,15 +38,15 @@ export default function Platform() {
   const reduced = useReducedMotion() ?? false;
 
   return (
-    <section className="bg-novo-cream py-[80px] md:py-[128px]">
+    <section className="bg-[#2a2824] py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[1280px] px-8">
 
         {/* Header */}
         <div className="mb-20 text-center">
-          <p className="mb-6 font-mono text-[13px] uppercase tracking-[0.08em] text-novo-graphite">
+          <p className="mb-6 font-mono text-[13px] uppercase tracking-[0.08em] text-[#a9a6a2]">
             — NOVOLABS OS PLATFORM
           </p>
-          <h2 className="mx-auto max-w-[20ch] font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+          <h2 className="mx-auto max-w-[20ch] font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-[#FAFAFA] md:text-[72px]">
             Los agentes trabajan 24h. Tu equipo aprueba cuando importa.
           </h2>
         </div>
@@ -66,13 +66,13 @@ export default function Platform() {
                 transition={{ duration: 0.5, delay: i * 0.1, ease: EASE }}
               >
                 <div className="flex-shrink-0 mt-1">
-                  <feature.icon size={20} className="text-novo-black" strokeWidth={1.5} />
+                  <feature.icon size={20} className="text-[#FAFAFA]" strokeWidth={1.5} />
                 </div>
                 <div>
-                  <h3 className="mb-2 font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black">
+                  <h3 className="mb-2 font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-[#FAFAFA]">
                     {feature.title}
                   </h3>
-                  <p className="text-[16px] leading-[1.6] text-novo-graphite">
+                  <p className="text-[16px] leading-[1.6] text-[#a9a6a2]">
                     {feature.body}
                   </p>
                 </div>
@@ -82,7 +82,7 @@ export default function Platform() {
 
           {/* Right — image */}
           <motion.div
-            className="relative aspect-[4/3] w-full overflow-hidden rounded-md border border-novo-line"
+            className="relative aspect-[4/3] w-full overflow-hidden rounded-md border border-[#FAFAFA]"
             initial={reduced ? undefined : { opacity: 0, y: 16 }}
             whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -101,10 +101,10 @@ export default function Platform() {
       </div>
 
       {/* Integrations band */}
-      <div className="mt-20 bg-novo-cream-50 px-8 py-12">
+      <div className="mt-20 bg-[#2a2824] px-8 py-12">
         <div className="mx-auto max-w-[1280px]">
           <Eyebrow className="mb-6">INTEGRACIONES</Eyebrow>
-          <p className="font-mono text-[13px] tracking-[0.04em] text-novo-graphite">
+          <p className="font-mono text-[13px] tracking-[0.04em] text-[#a9a6a2]">
             {INTEGRATIONS.join(" · ")}
           </p>
         </div>
