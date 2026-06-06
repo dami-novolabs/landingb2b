@@ -109,7 +109,7 @@ export default function CredibilityBand() {
 
       {/* Advisors */}
       <div className="mx-auto mt-20 max-w-[880px] px-8">
-        <h3 className="mb-12 font-display text-[30px] text-novo-black">
+        <h3 className="mb-12 font-display text-[48px] text-novo-black">
           Socios que apoyan Novolabs
         </h3>
       </div>
