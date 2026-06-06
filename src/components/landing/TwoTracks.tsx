@@ -30,7 +30,7 @@ export default function TwoTracks() {
             Trabajas directo con los fundadores, sin consultores.
           </h2>
           <p className="mx-auto mt-6 max-w-[56ch] text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-graphite">
-            Por eso solo aceptamos 2 clientes en simultáneo.
+            Por eso solo aceptamos 2 clientes por trimestre.
           </p>
 
           {/* Founder portraits */}
@@ -63,7 +63,7 @@ export default function TwoTracks() {
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
         <h3 className="mb-12 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
-          Dos Programas, un equipo.
+          Lorem Ipsum.
         </h3>
 
         <div className="flex justify-center">
