@@ -3,7 +3,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const PHASES = [
   {
-    eyebrow: "FASE 1 · SEMANAs 1–2",
+    eyebrow: "FASE 1 · SEMANAs 1 y 2",
     title: "Diagnóstico operacional",
     intro:
       "Antes de automatizar nada, entender cómo opera la empresa hoy y dónde están los cuellos de botella reales.",
@@ -15,7 +15,7 @@ const PHASES = [
     ],
   },
   {
-    eyebrow: "FASE 2 · SEMANAS 3–4",
+    eyebrow: "FASE 2 · SEMANAS 3 y 4",
     title: "Diseño de infraestructura",
     intro:
       "Con el diagnóstico claro, diseñar la arquitectura de agentes antes de construir. Validar el diseño con el equipo operativo.",
@@ -28,7 +28,7 @@ const PHASES = [
     
   },
   {
-    eyebrow: "FASE 3 · SEMANAS 5–12",
+    eyebrow: "FASE 3 · SEMANAS 5 a 12",
     title: "Construcción y adopción",
     intro:
       "Construir la infraestructura mínima que libera capacidad real y asegurar que el equipo la adopta.",
