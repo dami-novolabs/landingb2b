@@ -7,9 +7,9 @@ import { Search, Zap, BarChart2 } from "lucide-react";
 const BLOCKS = [
   {
     num: "01",
-    title: "Contrataron una consultora. Recibieron un informe.",
-    body: "El equipo del consultor pasó semanas relevando información y entregó un documento de 80 páginas con recomendaciones. Después se fue. El desafío sigue donde estaba.",
-    learning: "El mismo problema va a aparecer en la próxima reunión trimestral.",
+    title: "Contrataste un consultor.",
+    body: "Se la pasó semanas relevando información y entregó un documento de 80 páginas con recomendaciones. Tu empresa siguió en el mismo lugar.",
+    learning: "Hay que embarrarse para hacer que las cosas pasen.",
   },
   {
     num: "02",
@@ -40,7 +40,7 @@ export default function WhyNovoLabs() {
         {/* Centred display-xl header, no eyebrow */}
         <div className="mb-16 text-center">
           <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
-            No es consultoría ni tampoco una capacitación. Es mejor.
+            Otros te dicen qué hacer. Nosotros lo hacemos y te enseñamos a continuarlo.
           </h2>
         </div>
 
@@ -49,18 +49,18 @@ export default function WhyNovoLabs() {
           {[
             {
               Icon: Search,
-              title: "Diagnóstico primero",
-              body: "Nunca llegamos con la solución antes de entender el problema. Mapeamos tu operación o tu iniciativa, cuantificamos el impacto real, y recién ahí definimos qué construir o validar primero.",
+              title: "Diagnóstico antes que solución",
+              body: "Mapeamos tu operación, cuantificamos dónde se pierde tiempo y dinero, y recién ahí definimos qué construir o validar. Sin asumir. Sin templates.",
             },
             {
               Icon: Zap,
-              title: "Nosotros hacemos el trabajo",
-              body: "No entregamos un deck con recomendaciones. Novolabs construye el equipo de agentes autónomos que necesita tu operación, o lidera el proceso completo de validación con clientes reales. Tu equipo toma las decisiones — nosotros ponemos los recursos.",
+              title: "Ejecutamos, no recomendamos",
+              body: "Construimos el equipo de agentes autónomos que tu operación necesita, o lideramos la validación completa con clientes reales. Tu equipo decide la dirección. Nosotros ponemos las manos.",
             },
             {
               Icon: BarChart2,
-              title: "Resultados medibles, no promesas",
-              body: "Cada programa cierra con algo concreto: un sistema de agentes funcionando con métricas de ahorro reales, o evidencia de demanda concreta para decidir si vale la pena construirlo. Sin slides. Con datos.",
+              title: "Salimos con datos, no con PDFs",
+              body: "Cada programa cierra con algo concreto: un sistema de agentes corriendo con métricas de ahorro reales, o evidencia validada de demanda para decidir si vale construirlo. Medible. Verificable. Tuyo.",
             },
           ].map(({ Icon, title, body }, i) => (
             <motion.div
@@ -83,7 +83,7 @@ export default function WhyNovoLabs() {
 
         {/* Centered subtitle above problems list */}
         <h3 className="mb-16 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
-          Lorem ipsum dolor sit amet
+          Probablemente vos también...
         </h3>
 
         <div>
