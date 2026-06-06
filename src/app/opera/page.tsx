@@ -46,8 +46,8 @@ export default function OperaPage() {
       <main>
         <Hero />
         <TheProblem />
-        <Solution />
         <Platform />
+        <Solution />
         <HowWeWork />
         <Security />
         <AtCompletion />
