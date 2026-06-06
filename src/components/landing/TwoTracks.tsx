@@ -66,7 +66,8 @@ export default function TwoTracks() {
           Dos Programas, un equipo.
         </h3>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="flex justify-center">
+          <div className="w-full max-w-[560px]">
           {CARDS.map((card, i) => (
             <motion.div
               key={card.href}
@@ -107,6 +108,7 @@ export default function TwoTracks() {
               </Card>
             </motion.div>
           ))}
+          </div>
         </div>
       </div>
     </section>
