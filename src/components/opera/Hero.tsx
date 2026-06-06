@@ -27,7 +27,7 @@ export default function Hero() {
         {/* Left — text */}
         <div>
           <motion.div {...motionProps(0, reduced)}>
-            <Eyebrow>OPERA · TRACK DE ESCALADO OPERATIVO</Eyebrow>
+            <Eyebrow>PROGRAMA OPERA </Eyebrow>
           </motion.div>
 
           <motion.h1
