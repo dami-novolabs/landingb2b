@@ -12,9 +12,7 @@ export default function FinalCTA() {
             <div className="p-8 md:p-16">
               <Eyebrow>EL PRIMER PASO</Eyebrow>
               <h2 className="font-display text-[36px] leading-[1.08] tracking-[-0.03em] text-novo-black md:text-[56px]">
-                45 minutos.
-                <br />
-                Sin compromiso.
+                Descubrir qué oportunidades tu negocio puede capitalizar.
               </h2>
               <p className="mb-10 mt-6 text-body-l text-novo-charcoal">
                 En esta primera conversación evaluamos juntos si nuestro programa es lo que necesita tu negocio (o no).
