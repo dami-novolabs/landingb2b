@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { Layers, UserCheck, Key, FileText } from "lucide-react";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -79,17 +80,21 @@ export default function Platform() {
             ))}
           </div>
 
-          {/* Right — placeholder */}
+          {/* Right — image */}
           <motion.div
-            className="aspect-[4/3] w-full rounded-md border border-novo-line bg-novo-line flex items-center justify-center"
+            className="relative aspect-[4/3] w-full overflow-hidden rounded-md border border-novo-line"
             initial={reduced ? undefined : { opacity: 0, y: 16 }}
             whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: EASE }}
           >
-            <span className="font-mono text-[13px] tracking-[0.04em] text-novo-mid">
-              NOVOLABS OS · DASHBOARD
-            </span>
+            <Image
+              src="/opera/dashboard.png"
+              alt="Novolabs OS Dashboard"
+              fill
+              className="object-cover"
+              priority
+            />
           </motion.div>
 
         </div>
