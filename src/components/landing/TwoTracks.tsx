@@ -7,14 +7,14 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const CARDS = [
   {
-    eyebrow: "OPERA",
+    eyebrow: "Programa Opera - 12 semanas",
     title: "Escalar la operación con IA sin sumar headcount.",
     body1:
       "Para empresas con procesos manuales que ya no pueden crecer sin más gente. Diagnosticamos los cuellos de botella por impacto económico y construimos la infraestructura de agentes que libera capacidad real.",
     body2:
       "En 12 semanas, tu equipo trabaja con una capa de IA propia, documentada y de tu propiedad.",
     ideal: "IDEAL PARA: CEO · COO · DIRECTOR OPERACIONES · CFO",
-    cta: "Conocer Programa Opera",
+    cta: "Cómo funciona el programa",
     href: "/opera",
   },
 ];
@@ -62,9 +62,6 @@ export default function TwoTracks() {
       </div>
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
-        <h3 className="mb-12 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
-          Lorem Ipsum.
-        </h3>
 
         <div className="flex justify-center">
           <div className="w-full max-w-[560px]">
