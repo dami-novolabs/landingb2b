@@ -39,7 +39,7 @@ export default function Hero() {
           className="mb-12 max-w-[56ch] text-body-xl text-novo-charcoal"
           {...motionProps(400, reduced)}
         >
-          Construimos los agentes de IA que tu operación necesita para escalar. En 12 semanas, dentro de tu empresa, y trabajando con tu equipo.{" "}
+          Construimos los agentes de IA que tu operación necesita para escalar. En 12 semanas, trabajamos con tu equipo.{" "}
           <span className="font-medium text-novo-accent">
             sobre un desafío real que mejore tu negocio.
           </span>
