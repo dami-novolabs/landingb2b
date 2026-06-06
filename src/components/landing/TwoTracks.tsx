@@ -14,8 +14,8 @@ const CARDS = [
     body2:
       "En 12 semanas, tu equipo trabaja con una capa de IA propia, documentada y de tu propiedad.",
     bullets: [
-      "Sistema de agentes operando los procesos que más tiempo y dinero te consumen hoy.",
-      "Métricas reales: horas liberadas y reducción del costo operativo.",
+      "Agentes 24/7 ayudando a tu equipo a operar mejor.",
+      "Métricas: horas liberadas y reducción del costo operativo.",
       "Tu equipo capacitado para trabajar con nuevas tecnologías.",
     ],
     ideal: "IDEAL PARA: CEO · COO · DIRECTOR OPERACIONES · CFO",
