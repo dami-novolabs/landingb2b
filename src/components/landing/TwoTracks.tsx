@@ -13,6 +13,11 @@ const CARDS = [
       "Diagnosticamos los cuellos de botella de tu operación por impacto económico, construimos los agentes que más capacidad liberan y los dejamos operando dentro de tu equipo. Doce semanas, una sola modalidad: hecho.",
     body2:
       "En 12 semanas, tu equipo trabaja con una capa de IA propia, documentada y de tu propiedad.",
+    bullets: [
+      "Sistema de agentes operando los procesos que más tiempo y dinero te consumen hoy.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing.",
+    ],
     ideal: "IDEAL PARA: CEO · COO · DIRECTOR OPERACIONES · CFO",
     cta: "Cómo funciona el programa",
     href: "/opera",
@@ -84,10 +89,10 @@ export default function TwoTracks() {
                 </h3>
                 <p className="mb-6 text-body-m text-novo-charcoal">{card.body1}</p>
                 <ul className="flex flex-col gap-3">
-                  {[0, 1, 2].map((n) => (
+                  {card.bullets.map((bullet, n) => (
                     <li key={n} className="flex items-start gap-2 text-body-m text-novo-charcoal">
                       <span className="mt-0.5 shrink-0 text-novo-accent">→</span>
-                      Lorem ipsum dolor sit amet consectetur adipiscing.
+                      {bullet}
                     </li>
                   ))}
                 </ul>
