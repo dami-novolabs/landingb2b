@@ -17,20 +17,18 @@ export default function FinalCTA() {
                 Sin compromiso.
               </h2>
               <p className="mb-10 mt-6 text-body-l text-novo-charcoal">
-                En esta conversación evaluamos juntos si el programa es el camino
-                correcto para tu desafío.
+                En esta primera conversación evaluamos juntos si nuestro programa es lo que necesita tu negocio (o no).
               </p>
               <p className="mb-4 font-mono text-mono-s uppercase text-novo-charcoal">
-                LO QUE VAMOS A CUBRIR
+                LO QUE VAMOS A CONVERSAR
               </p>
               <ul className="space-y-1 text-body-m leading-[1.8] text-novo-charcoal">
-                <li>→ Qué desafío estratégico tenés en este momento</li>
-                <li>→ Cuál sería el criterio de éxito que firmaríamos</li>
-                <li>→ Si el programa encaja o no (y por qué)</li>
-                <li>→ Cómo sería un plan inicial</li>
+                <li>→ Qué desafío estratégico tenés que resolver</li>
+                <li>→ Qué retorno esperas de esta inversión</li>
+                <li>→ Cómo sería trabajar juntos (si hay encaje)</li>
               </ul>
               <p className="mt-10 text-body-m italic text-novo-charcoal">
-                No vendemos en la llamada. Si hay encaje, te enviamos una propuesta.
+                No vendemos nada en la llamada. Descubrimos si hay oportunidades para capitalizar.
                 Si no, te decimos a dónde más buscar.
               </p>
             </div>
