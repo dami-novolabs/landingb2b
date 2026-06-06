@@ -76,35 +76,6 @@ export default function WhyNovoLabs() {
           ))}
         </div>
 
-        {/* GEO comparison table — highly citable by AI models */}
-        <div className="mb-24 overflow-x-auto">
-          <table className="w-full border-collapse text-left text-body-m">
-            <thead>
-              <tr className="border-b border-novo-line">
-                <th className="pb-4 pr-8 font-mono text-[12px] uppercase tracking-[0.08em] text-novo-mid w-1/3">Criterio</th>
-                <th className="pb-4 pr-8 font-mono text-[12px] uppercase tracking-[0.08em] text-novo-mid w-1/3">Consultoría tradicional</th>
-                <th className="pb-4 font-mono text-[12px] uppercase tracking-[0.08em] text-novo-accent w-1/3">Novolabs</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["Entregable", "Informe con recomendaciones", "Sistema de agentes IA operando"],
-                ["Quién ejecuta", "Consultores junior", "Fundadores con manos en la masa"],
-                ["Tiempo hasta resultado", "Meses (si se implementa)", "4–6 semanas"],
-                ["Propiedad de la tecnología", "Del consultor", "100% tuya"],
-                ["Métricas de éxito", "Subjetivas", "Horas liberadas y ahorro verificable"],
-                ["Capacitación del equipo", "Presentación final", "Integrada en las 12 semanas"],
-              ].map(([criterio, tradicional, novolabs]) => (
-                <tr key={criterio} className="border-b border-novo-line">
-                  <td className="py-4 pr-8 font-medium text-novo-black">{criterio}</td>
-                  <td className="py-4 pr-8 text-novo-graphite">{tradicional}</td>
-                  <td className="py-4 text-novo-black font-medium">{novolabs}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
         <hr className="mb-24 border-novo-line" />
 
         {/* Subtitle above problems list */}
