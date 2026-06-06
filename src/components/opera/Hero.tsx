@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { ButtonPrimary } from "@/components/ui/ButtonPrimary";
@@ -53,14 +54,18 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Right — image placeholder */}
+        {/* Right — image */}
         <motion.div
-          className="aspect-[4/3] w-full rounded-md border border-novo-line bg-novo-line flex items-center justify-center"
+          className="relative aspect-[4/3] w-full overflow-hidden rounded-md border border-novo-line"
           {...motionProps(200, reduced)}
         >
-          <span className="font-mono text-[13px] tracking-[0.04em] text-novo-mid">
-            NOVOLABS OS COCKPIT
-          </span>
+          <Image
+            src="/opera/cockpit.png"
+            alt="Novolabs OS Cockpit"
+            fill
+            className="object-cover"
+            priority
+          />
         </motion.div>
 
       </div>
