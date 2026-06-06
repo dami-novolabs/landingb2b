@@ -54,7 +54,7 @@ export default function WhyNovoLabs() {
             {
               Icon: BarChart2,
               title: "Salimos con datos, no con PDFs",
-              body: "Cada programa cierra con algo concreto: un sistema de agentes corriendo con métricas de ahorro reales.Verificable. Tuyo.",
+              body: "Al finalizar tendrás un sistema de agentes corriendo con métricas de ahorro reales. Verificable. Tuyo.",
             },
           ].map(({ Icon, title, body }, i) => (
             <motion.div
