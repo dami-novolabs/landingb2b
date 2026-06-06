@@ -9,7 +9,6 @@ import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
   { label: "Programa Opera", href: "/opera" },
-  { label: "Nuestro Equipo", href: "#equipo" },
 ];
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
