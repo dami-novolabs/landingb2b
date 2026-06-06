@@ -6,21 +6,18 @@ import { motion, useReducedMotion } from "framer-motion";
 const BLOCKS = [
   {
     num: "01",
-    title: "Contrataste un consultor.",
-    body: "Pasó semanas relevando información y entregó 80 páginas de recomendaciones. Tu operación siguió en el mismo lugar.",
-    learning: "Hay que embarrarse para que las cosas pasen.",
+    title: "La brecha es de margen, no de tecnología.",
+    body: "Las empresas que ya integraron sistemas de IA en operaciones reportan reducciones de overhead del 20 al 40% en áreas como soporte, administración y ventas.",
   },
   {
     num: "02",
-    title: "Capacitaste al equipo. Nadie aplicó nada.",
-    body: "Durante el programa, entusiasmo. De vuelta al día a día, la urgencia ganó en 72 horas.",
-    learning: "El conocimiento que no se aplica en 30 días no se aplica nunca.",
+    title: "La ventaja es acumulativa.",
+    body: "Cada mes que pasa, los que ya implementaron generan más datos, afinan mejor sus agentes y bajan más sus costos. La brecha entre el que empezó hace seis meses y el que empieza hoy no es lineal — es compuesta.",
   },
   {
     num: "03",
-    title: "Intentaste resolverlo internamente sin éxito.",
-    body: "Buena voluntad, equipo capaz pero a la primera urgencia operativa, la iniciativa pasó a segundo plano hasta morir en el olvido.",
-    learning: "Sin estructura, el negocio actual siempre le gana a la iniciativa nueva.",
+    title: "Cuando un competidor baja costos te ataca con su nuevo precio.",
+    body: "Y vos no competís contra su tecnología — competís contra su margen. El costo de no implementar no aparece en tu P&L este trimestre. Aparece cuando perdés un contrato por 8% de diferencia que no podés bajar.",
   },
 ];
 
@@ -31,7 +28,7 @@ export default function Solution() {
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
         <h2 className="mb-16 font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
-          Probablemente vos también...
+          La IA no va a reemplazar tu empresa, pero va a optimizar la estructura de costos de quienes la usen.
         </h2>
 
         <div>
