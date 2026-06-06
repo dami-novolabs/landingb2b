@@ -18,8 +18,6 @@ import Security from "@/components/opera/Security";
 import AtCompletion from "@/components/opera/AtCompletion";
 // Sección 8
 import Credibility from "@/components/opera/Credibility";
-// Sección 9
-import Investment from "@/components/opera/Investment";
 // Sección 10
 import FAQs from "@/components/opera/FAQs";
 // Sección 11
@@ -46,13 +44,12 @@ export default function OperaPage() {
       <main>
         <Hero />
         <TheProblem />
-        <Solution />
         <Platform />
+        <Solution />
         <HowWeWork />
         <Security />
         <AtCompletion />
         <Credibility />
-        <Investment />
         <FAQs />
         <FinalCTA />
         <ClosingCTA />
