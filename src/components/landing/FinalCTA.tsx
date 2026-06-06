@@ -26,8 +26,7 @@ export default function FinalCTA() {
                 <li>→ Cómo sería trabajar juntos (si hay encaje)</li>
               </ul>
               <p className="mt-10 text-body-m italic text-novo-charcoal">
-                No vendemos nada en la llamada. Descubrimos si hay oportunidades para capitalizar.
-                Si no, te decimos a dónde más buscar.
+                No vendemos nada en la llamada, sólo descubrimos si hay encaje.
               </p>
             </div>
 
