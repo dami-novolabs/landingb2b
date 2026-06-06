@@ -33,9 +33,6 @@ export default function WhyNovoLabs() {
       <div className="mx-auto max-w-[880px] px-8">
         {/* Centred display-xl header, no eyebrow */}
         <div className="mb-16 text-center">
-          <p className="mb-4 font-mono text-[13px] uppercase tracking-[0.08em] text-novo-graphite">
-            CONSULTORÍA DE AUTOMATIZACIÓN CON IA
-          </p>
           <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
             Otros te dicen qué hacer. Nosotros lo hacemos y te enseñamos a continuarlo.
           </h2>
@@ -74,35 +71,6 @@ export default function WhyNovoLabs() {
               <p className="text-body-m leading-[1.6] text-novo-graphite">{body}</p>
             </motion.div>
           ))}
-        </div>
-
-        {/* GEO comparison table — highly citable by AI models */}
-        <div className="mb-24 overflow-x-auto">
-          <table className="w-full border-collapse text-left text-body-m">
-            <thead>
-              <tr className="border-b border-novo-line">
-                <th className="pb-4 pr-8 font-mono text-[12px] uppercase tracking-[0.08em] text-novo-mid w-1/3">Criterio</th>
-                <th className="pb-4 pr-8 font-mono text-[12px] uppercase tracking-[0.08em] text-novo-mid w-1/3">Consultoría tradicional</th>
-                <th className="pb-4 font-mono text-[12px] uppercase tracking-[0.08em] text-novo-accent w-1/3">Novolabs</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["Entregable", "Informe con recomendaciones", "Sistema de agentes IA operando"],
-                ["Quién ejecuta", "Consultores junior", "Fundadores con manos en la masa"],
-                ["Tiempo hasta resultado", "Meses (si se implementa)", "4–6 semanas"],
-                ["Propiedad de la tecnología", "Del consultor", "100% tuya"],
-                ["Métricas de éxito", "Subjetivas", "Horas liberadas y ahorro verificable"],
-                ["Capacitación del equipo", "Presentación final", "Integrada en las 12 semanas"],
-              ].map(([criterio, tradicional, novolabs]) => (
-                <tr key={criterio} className="border-b border-novo-line">
-                  <td className="py-4 pr-8 font-medium text-novo-black">{criterio}</td>
-                  <td className="py-4 pr-8 text-novo-graphite">{tradicional}</td>
-                  <td className="py-4 text-novo-black font-medium">{novolabs}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
 
         <hr className="mb-24 border-novo-line" />
