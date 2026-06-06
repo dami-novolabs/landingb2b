@@ -9,24 +9,24 @@ const EASE = [0, 0, 0.2, 1] as const;
 
 const FEATURES = [
   {
-    icon: Layers,
-    title: "Multi-área",
-    body: "Agentes desplegados en Ventas, Operaciones y Marketing desde una sola plataforma.",
-  },
-  {
     icon: UserCheck,
-    title: "Human-in-the-Loop",
-    body: "El sistema ejecuta, tu equipo aprueba las decisiones que importan. Nada corre sin supervisión si así lo configurás.",
+    title: "Vos seguís decidiendo. Los agentes ejecutan.",
+    body: "Configurás qué puede hacer el sistema solo y qué necesita la aprobación de alguien de tu equipo. Nada se ejecuta por encima de tu gente si vos no lo querés así.",
   },
   {
     icon: Key,
-    title: "BYOK — Bring Your Own Key",
-    body: "Usás tu propia API key de Anthropic. Los tokens se facturan directo a tu cuenta. Novo Labs nunca toca tus credenciales.",
+    title: "El costo de IA lo pagás directo, sin intermediarios.",
+    body: "Contratás vos mismo con el proveedor de IA (Anthropic, los creadores de Claude). El consumo va a tu cuenta, ves cada peso que se gasta, y nosotros no facturamos sobreprecio por encima.",
+  },
+  {
+    icon: Layers,
+    title: "Cubre todas las áreas, desde un mismo lugar.",
+    body: "Los agentes operan en Ventas, Operaciones y Marketing al mismo tiempo. Una sola plataforma para todo el negocio, no una herramienta distinta para cada área.",
   },
   {
     icon: FileText,
-    title: "Audit log en lenguaje de negocio",
-    body: "Cada acción del agente queda registrada en lenguaje legible para el equipo, no en logs técnicos.",
+    title: "Ves todo lo que hace el sistema, en castellano claro.",
+    body: "Cada decisión del agente queda registrada en un historial que cualquiera de tu equipo puede leer y entender. Qué pasó, cuándo, por qué — sin tener que pedirle ayuda al área de IT.",
   },
 ];
 

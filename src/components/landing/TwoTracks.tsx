@@ -20,7 +20,7 @@ const CARDS = [
     ],
     ideal: "IDEAL PARA: CEO · COO · DIRECTOR OPERACIONES · CFO",
     cta: "Cómo funciona el programa",
-    href: "/opera",
+    href: "/programa",
   },
 ];
 

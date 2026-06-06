@@ -24,14 +24,26 @@ const editorial = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Novo Labs — Programa estratégico para empresas que facturan $5M+",
+  title: "Automatización con IA para Empresas | Novolabs — Buenos Aires & Madrid",
   description:
-    "Trabajamos dentro de tu empresa durante 12 semanas con un criterio de éxito firmado el día uno. Si al cierre no se cumple, devolvemos el 50% de la inversión.",
+    "Novolabs construye infraestructura de agentes de IA dentro de tu empresa en 12 semanas. Para CEOs y COOs que quieren escalar sin contratar. Solo 2 clientes por trimestre.",
+  keywords: [
+    "automatización de operaciones con IA para empresas",
+    "implementar agentes de IA en empresa",
+    "consultoría de automatización con IA",
+    "escalar operaciones sin aumentar headcount",
+    "agentes autónomos empresa",
+    "Novolabs",
+  ],
   openGraph: {
-    title: "Novo Labs",
-    description: "Programa estratégico de 12 semanas. 50% reembolsable.",
+    title: "Automatización con IA para Empresas | Novolabs — Buenos Aires & Madrid",
+    description:
+      "Novolabs construye infraestructura de agentes de IA dentro de tu empresa en 12 semanas. Para CEOs y COOs que quieren escalar sin contratar. Solo 2 clientes por trimestre.",
     type: "website",
     locale: "es_AR",
+  },
+  alternates: {
+    canonical: "https://novolabs.app",
   },
 };
 

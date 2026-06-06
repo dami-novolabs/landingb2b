@@ -8,8 +8,7 @@ import { ButtonPrimary } from "@/components/ui/ButtonPrimary";
 import { cn } from "@/lib/utils";
 
 const NAV_ITEMS = [
-  { label: "Programa Opera", href: "/opera" },
-  { label: "Nuestro Equipo", href: "#equipo" },
+  { label: "Programa Opera", href: "/programa" },
 ];
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
