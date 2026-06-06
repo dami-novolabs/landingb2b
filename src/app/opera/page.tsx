@@ -6,6 +6,8 @@ import Footer from "@/components/landing/Footer";
 import Hero from "@/components/opera/Hero";
 // Sección 2
 import TheProblem from "@/components/opera/TheProblem";
+// Sección 2b
+import Solution from "@/components/opera/Solution";
 // Sección 3
 import ForWhom from "@/components/opera/ForWhom";
 // Sección 4
@@ -46,6 +48,7 @@ export default function OperaPage() {
       <main>
         <Hero />
         <TheProblem />
+        <Solution />
         <ForWhom />
         <Platform />
         <HowWeWork />
