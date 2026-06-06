@@ -15,12 +15,12 @@ const BLOCKS = [
     num: "02",
     title: "Capacitaste al equipo. Nadie aplicó nada.",
     body: "Durante el programa, entusiasmo. De vuelta al día a día, la urgencia ganó en 72 horas.",
-    learning: "Sin estructura, lo urgente siempre le gana a lo importante.",
+    learning: "El conocimiento que no se aplica en 30 días no se aplica nunca.",
   },
   {
     num: "03",
-    title: "Intentaron resolverlo internamente. Murió en el tercer mes.",
-    body: "Buena voluntad, equipo capaz. La primera urgencia operativa le ganó al proyecto. Sin metodología, las iniciativas pierden impulso ante cualquier imprevisto.",
+    title: "Intentaste resolverlo internamente sin éxito.",
+    body: "Buena voluntad, equipo capaz pero a la primera urgencia operativa, la iniciativa pasó a segundo plano hasta morir en el olvido.",
     learning: "Sin estructura, el negocio actual siempre le gana a la iniciativa nueva.",
   },
 ];
