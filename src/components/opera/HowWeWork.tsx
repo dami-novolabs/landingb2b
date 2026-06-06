@@ -3,7 +3,7 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const PHASES = [
   {
-    eyebrow: "FASE 1 · SEMANAS 1–3",
+    eyebrow: "FASE 1 · SEMANAs 1–2",
     title: "Diagnóstico operacional",
     intro:
       "Antes de automatizar nada, entender cómo opera la empresa hoy y dónde están los cuellos de botella reales.",
@@ -13,11 +13,9 @@ const PHASES = [
       "Identificación de los 3–5 procesos con mayor potencial de automatización",
       "Matriz de impacto vs. complejidad: qué automatizar primero",
     ],
-    deliverable:
-      "Mapa de procesos + ranking de cuellos de botella por impacto económico + matriz de priorización",
   },
   {
-    eyebrow: "FASE 2 · SEMANAS 4–7",
+    eyebrow: "FASE 2 · SEMANAS 3–4",
     title: "Diseño de infraestructura",
     intro:
       "Con el diagnóstico claro, diseñar la arquitectura de agentes antes de construir. Validar el diseño con el equipo operativo.",
@@ -27,10 +25,10 @@ const PHASES = [
       "Estimación de ROI por implementación: horas ahorradas, reducción de errores, velocidad ganada",
       'Validación del diseño con el equipo operativo antes de construir ("Mom Test de infraestructura": ¿el equipo lo usaría?)',
     ],
-    deliverable: "Arquitectura + Stack + Estimación de ROI firmada",
+    
   },
   {
-    eyebrow: "FASE 3 · SEMANAS 8–12",
+    eyebrow: "FASE 3 · SEMANAS 5–12",
     title: "Construcción y adopción",
     intro:
       "Construir la infraestructura mínima que libera capacidad real y asegurar que el equipo la adopta.",
@@ -40,7 +38,6 @@ const PHASES = [
       "Documentación del sistema para que el equipo pueda mantenerlo",
       "Sesión de cierre: métricas reales vs. métricas proyectadas",
     ],
-    deliverable: "Sistema funcionando + documentación + métricas de impacto reales",
   },
 ];
 
