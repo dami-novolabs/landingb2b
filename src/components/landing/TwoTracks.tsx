@@ -8,9 +8,9 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 const CARDS = [
   {
     eyebrow: "Programa Opera - 12 semanas",
-    title: "Escalar la operación con IA sin sumar headcount.",
+    title: "Sistema Operativo de Agentes Autónomos que potencian tu equipo.",
     body1:
-      "Para empresas con procesos manuales que ya no pueden crecer sin más gente. Diagnosticamos los cuellos de botella por impacto económico y construimos la infraestructura de agentes que libera capacidad real.",
+      "Diagnosticamos los cuellos de botella de tu operación por impacto económico, construimos los agentes que más capacidad liberan y los dejamos operando dentro de tu equipo. Doce semanas, una sola modalidad: hecho.",
     body2:
       "En 12 semanas, tu equipo trabaja con una capa de IA propia, documentada y de tu propiedad.",
     ideal: "IDEAL PARA: CEO · COO · DIRECTOR OPERACIONES · CFO",
@@ -63,7 +63,7 @@ export default function TwoTracks() {
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
         <h3 className="mb-12 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
-          Te ayudamos a lograr más, gastando menos para que tu negocio pueda crecer sin necesidad de contratar.
+          Para empresas que quieren crecer sin contratar.
         </h3>
 
         <div className="flex justify-center">
