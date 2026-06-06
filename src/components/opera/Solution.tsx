@@ -28,7 +28,7 @@ export default function Solution() {
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
         <h2 className="mb-16 font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
-          No es que la IA reemplace empresas. Es que cambia la estructura de costos de las que la usan.
+          La IA no va a reemplazar tu empresa, pero va a optimizar la estructura de costos de quienes la usen.
         </h2>
 
         <div>
