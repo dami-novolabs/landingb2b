@@ -23,7 +23,7 @@ export default function FinalCTA() {
               <ul className="space-y-1 text-body-m leading-[1.8] text-novo-charcoal">
                 <li>→ Qué desafío estratégico tenés que resolver</li>
                 <li>→ Qué retorno esperas de esta inversión</li>
-                <li>→ Cómo sería trabajar juntos (si hay encaje)</li>
+                <li>→ Qué implica trabajar juntos</li>
               </ul>
               <p className="mt-10 text-body-m italic text-novo-charcoal">
                 No vendemos nada en la llamada, primero hay que descubrir si hay encaje.
