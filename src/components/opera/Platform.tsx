@@ -31,7 +31,7 @@ const FEATURES = [
 ];
 
 const INTEGRATIONS = [
-  "HubSpot", "Slack", "Gmail", "WhatsApp", "Notion", "Make", "n8n", "Anthropic", "Supabase",
+  "Cada mes tu Sistema Operativo recibe mejoras, actualiza los modelos de IA y optimiza los costos de tu operación.",
 ];
 
 export default function Platform() {
@@ -103,7 +103,7 @@ export default function Platform() {
       {/* Integrations band */}
       <div className="mt-20 bg-[#2a2824] px-8 py-12">
         <div className="mx-auto max-w-[1280px]">
-          <Eyebrow className="mb-6">INTEGRACIONES</Eyebrow>
+          <Eyebrow className="mb-6">SIEMPRE ACTUALIZADO</Eyebrow>
           <p className="font-mono text-[13px] tracking-[0.04em] text-[#a9a6a2]">
             {INTEGRATIONS.join(" · ")}
           </p>
