@@ -23,7 +23,7 @@ export default function Hero() {
     <section className="bg-novo-cream px-8 pb-[80px] pt-[96px] md:pb-[128px] md:pt-[160px]">
       <div className="mx-auto max-w-[880px]">
         <motion.div {...motionProps(0, reduced)}>
-          <Eyebrow>PROGRAMA ESTRATÉGICO · 2 EMPRESAS POR TRIMESTRE</Eyebrow>
+          <Eyebrow>PROGRAMA INCOMPANY </Eyebrow>
         </motion.div>
 
         <h1 className="mb-10">
