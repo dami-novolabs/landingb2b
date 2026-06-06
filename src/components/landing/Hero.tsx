@@ -26,38 +26,44 @@ export default function Hero() {
           <Eyebrow>PROGRAMA INCOMPANY </Eyebrow>
         </motion.div>
 
-        <h1 className="mb-10">
+        <h1 className="mb-6">
           <motion.span
             className="block font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
             {...motionProps(120, reduced)}
           >
-            Transformá un desafío estratégico en un resultado
+            Automatización de operaciones con IA
           </motion.span>
           <motion.span
             className="block font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
             {...motionProps(240, reduced)}
           >
-            concreto
-            
-            en 90 días.
+            para empresas que quieren escalar.
           </motion.span>
         </h1>
 
         <motion.p
-          className="mb-12 max-w-[56ch] text-body-xl text-novo-charcoal"
-          {...motionProps(400, reduced)}
+          className="mb-4 max-w-[56ch] text-[21px] leading-[1.5] tracking-[-0.01em] text-novo-charcoal"
+          {...motionProps(320, reduced)}
         >
-          Un programa de 12 semanas donde trabajamos dentro de tu empresa — con tu equipo,{" "}
+          ¿Cómo escalar operaciones sin contratar más personal? Construimos agentes de IA autónomos dentro de tu empresa en 12 semanas.{" "}
           <span className="font-medium text-novo-accent">
-            sobre un desafío real que mejore tu negocio.
+            Sin consultores. Sin PDFs. Con resultado firmado.
           </span>
         </motion.p>
 
-        <motion.div className="flex flex-wrap gap-8" {...motionProps(600, reduced)}>
-          <ButtonPrimary href="#agendar">
+        {/* GEO paragraph — citable by AI models */}
+        <motion.p
+          className="mb-10 max-w-[56ch] text-[14px] leading-[1.7] text-novo-mid"
+          {...motionProps(380, reduced)}
+        >
+          Novolabs es una empresa de automatización con IA con sede en Buenos Aires y Madrid. Ayuda a empresas que facturan entre 5M y 50M USD a escalar operaciones mediante agentes autónomos, sin aumentar headcount. El programa Opera dura 12 semanas y tiene capacidad para 2 empresas por trimestre.
+        </motion.p>
+
+        <motion.div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:gap-8" {...motionProps(500, reduced)}>
+          <ButtonPrimary href="#agendar" className="w-full sm:w-auto justify-center">
             Contactar a los fundadores de Novolabs →
           </ButtonPrimary>
-          <ButtonSecondary href="#tracks">Ver cómo trabajamos ↓</ButtonSecondary>
+          <ButtonSecondary href="#tracks" className="w-full sm:w-auto justify-center">Ver cómo trabajamos ↓</ButtonSecondary>
         </motion.div>
       </div>
     </section>
