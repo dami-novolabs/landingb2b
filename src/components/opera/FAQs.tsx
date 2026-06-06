@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const FAQS = [
   {
@@ -28,29 +31,52 @@ const FAQS = [
 ];
 
 export default function FAQs() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
+
   return (
     <section className="bg-novo-cream-50 py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[720px] px-8">
 
-        {/* Header — centrado, display-xl */}
         <h2 className="mb-16 text-center font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
           Preguntas que repetimos en cada diagnóstico.
         </h2>
 
         <div>
-          {FAQS.map((faq, i) => (
-            <React.Fragment key={faq.q}>
-              {i > 0 && <hr className="my-14 border-novo-line" />}
-              <div>
-                <h3 className="mb-5 font-display text-[26px] tracking-[-0.02em] text-novo-black">
-                  {faq.q}
-                </h3>
-                <p className="max-w-[60ch] text-[17px] leading-[1.65] text-novo-charcoal">
-                  {faq.a}
-                </p>
+          {FAQS.map((faq, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <div key={faq.q} className="border-b border-novo-line first:border-t">
+                <button
+                  onClick={() => toggle(i)}
+                  aria-expanded={isOpen}
+                  className="flex w-full items-center justify-between gap-6 py-7 text-left"
+                >
+                  <h3 className="font-display text-[22px] leading-[1.3] tracking-[-0.02em] text-novo-black md:text-[26px]">
+                    {faq.q}
+                  </h3>
+                  <ChevronDown
+                    size={20}
+                    strokeWidth={1.5}
+                    className={`shrink-0 text-novo-graphite transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : "rotate-0"
+                    }`}
+                  />
+                </button>
+
+                <div
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    isOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <p className="pb-7 max-w-[60ch] text-[17px] leading-[1.65] text-novo-charcoal">
+                    {faq.a}
+                  </p>
+                </div>
               </div>
-            </React.Fragment>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
