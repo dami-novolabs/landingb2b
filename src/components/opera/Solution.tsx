@@ -52,9 +52,7 @@ export default function Solution() {
                 <p className="mb-8 max-w-[60ch] text-body-m leading-[1.6] text-novo-graphite">
                   {block.body}
                 </p>
-                <div className="border-l-2 border-novo-accent pl-6">
-                  <p className="text-[17px] italic text-novo-black">{block.learning}</p>
-                </div>
+
               </motion.div>
             </React.Fragment>
           ))}
