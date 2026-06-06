@@ -11,7 +11,7 @@ const COLUMNS = [
     eyebrow: "PROGRAMAS",
     links: [
       { label: "Innova", href: "/innova" },
-      { label: "Opera", href: "/opera" },
+      { label: "Opera", href: "/programa" },
     ],
   },
   {
