@@ -7,17 +7,6 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const CARDS = [
   {
-    eyebrow: "INNOVA ",
-    title: "Lanzar una nueva línea de negocio sin quemar presupuesto.",
-    body1:
-      "Para empresas que tienen una idea de producto, servicio o unidad de negocio nueva y necesitan validar demanda real antes de invertir.",
-    body2:
-      "En 12 semanas, tu equipo aprende a hablar con clientes reales, identificar el problema urgente y diseñar una oferta con compromiso de compra.",
-    ideal: "IDEAL PARA: CEO · VP INNOVACIÓN · CPO",
-    cta: "Conocer Programa Innova",
-    href: "/innova",
-  },
-  {
     eyebrow: "OPERA",
     title: "Escalar la operación con IA sin sumar headcount.",
     body1:
