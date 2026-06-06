@@ -8,8 +8,6 @@ import Hero from "@/components/opera/Hero";
 import TheProblem from "@/components/opera/TheProblem";
 // Sección 2b
 import Solution from "@/components/opera/Solution";
-// Sección 3
-import ForWhom from "@/components/opera/ForWhom";
 // Sección 4
 import Platform from "@/components/opera/Platform";
 // Sección 5
@@ -49,7 +47,6 @@ export default function OperaPage() {
         <Hero />
         <TheProblem />
         <Solution />
-        <ForWhom />
         <Platform />
         <HowWeWork />
         <Security />
