@@ -24,6 +24,21 @@ const CARDS = [
   },
 ];
 
+const STATS = [
+  {
+    value: "8",
+    label: "AÑOS CONSTRUYENDO DESDE CERO",
+  },
+  {
+    value: "40",
+    label: "EMPRESAS ACOMOPAÑADAS",
+  },
+  {
+    value: "360+",
+    label: "PERSONAS APLICARON NUESTRO MÉTODO",
+  },
+];
+
 export default function TwoTracks() {
   const reduce = useReducedMotion();
 
@@ -114,6 +129,26 @@ export default function TwoTracks() {
             </motion.div>
           ))}
           </div>
+        </div>
+
+        {/* Stats section */}
+        <div className="mx-auto mt-20 grid max-w-[1280px] grid-cols-2 gap-8 place-items-center md:grid-cols-3 md:gap-12">
+          {STATS.map((stat, i) => (
+            <motion.div
+              key={stat.value}
+              initial={reduce ? { opacity: 1 } : { opacity: 0, y: 12 }}
+              whileInView={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: i * 0.1, ease: [0, 0, 0.2, 1] }}
+            >
+              <p className="mb-4 font-display text-[48px] leading-none tracking-[-0.04em] text-novo-black md:text-[64px]">
+                {stat.value}
+              </p>
+              <p className="font-mono text-mono-xs uppercase leading-[1.5] tracking-[0.08em] text-novo-graphite">
+                {stat.label}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
