@@ -44,7 +44,7 @@ export default function Platform() {
         {/* Header */}
         <div className="mb-20 text-center">
           <p className="mb-6 font-mono text-[13px] uppercase tracking-[0.08em] text-[#a9a6a2]">
-            — NOVOLABS OS PLATFORM
+            TU SISTEMA OPERATIVO
           </p>
           <h2 className="mx-auto max-w-[20ch] font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-[#FAFAFA] md:text-[72px]">
             Los agentes trabajan 24h. Tu equipo aprueba cuando importa.
