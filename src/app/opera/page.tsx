@@ -22,8 +22,6 @@ import Credibility from "@/components/opera/Credibility";
 import FAQs from "@/components/opera/FAQs";
 // Sección 11
 import FinalCTA from "@/components/opera/FinalCTA";
-// Sección 12
-import ClosingCTA from "@/components/opera/ClosingCTA";
 
 export const metadata: Metadata = {
   title: "Opera — Novo Labs | Escalado operativo con agentes de IA",
@@ -52,7 +50,6 @@ export default function OperaPage() {
         <Credibility />
         <FAQs />
         <FinalCTA />
-        <ClosingCTA />
       </main>
       <Footer />
     </>
