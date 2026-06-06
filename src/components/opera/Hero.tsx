@@ -34,16 +34,14 @@ export default function Hero() {
             className="mb-8 mt-6 font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
             {...motionProps(120, reduced)}
           >
-            Tu equipo hace trabajo que podría hacer un agente. Cambiemos eso.
+            Tu operación llegó al techo de lo que tu equipo actual puede hacer.
           </motion.h1>
 
           <motion.p
             className="mb-10 max-w-[52ch] text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-charcoal"
             {...motionProps(300, reduced)}
           >
-            En 12 semanas, construimos la capa de agentes que multiplica la
-            capacidad del equipo actual. La medimos en horas liberadas y costo
-            operativo evitado, no en informes.
+           En 12 semanas te ayudamos a ampliar las capacidades de tu equipo con Agentes de IA, para que sigas creciendo pero sin contratar más personas.
           </motion.p>
 
           <motion.div className="flex flex-wrap gap-6" {...motionProps(500, reduced)}>
