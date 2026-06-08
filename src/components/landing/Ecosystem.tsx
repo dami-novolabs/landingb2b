@@ -21,16 +21,16 @@ export default function Ecosystem() {
   const reduce = useReducedMotion();
 
   return (
-    <section className="bg-novo-cream py-[80px] md:py-[128px]">
+    <section className="bg-novo-cream py-[48px] md:py-[80px]">
       {/* Header */}
-      <div className="mx-auto mb-20 max-w-[880px] px-8">
-        <h2 className="font-display text-[56px] leading-none tracking-[-0.03em] text-balance text-novo-black">
-          Confían en nosotros
-        </h2>
+      <div className="mx-auto mb-10 max-w-[880px] px-8">
+        <p className="font-mono text-[12px] uppercase tracking-[0.08em] text-novo-mid">
+          Desde 2019 construyendo para +40 empresas
+        </p>
       </div>
 
       {/* Logos grid */}
-      <div className="mx-auto mb-20 max-w-[1280px] px-8">
+      <div className="mx-auto mb-0 max-w-[1280px] px-8">
         <motion.div
           className="grid grid-cols-2 gap-6 md:grid-cols-5 md:gap-12"
           initial={reduce ? { opacity: 1 } : { opacity: 0, y: 16 }}

@@ -1,12 +1,16 @@
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
-import CredibilityBand from "@/components/landing/CredibilityBand";
-import TwoTracks from "@/components/landing/TwoTracks";
-import WhyNovoLabs from "@/components/landing/WhyNovoLabs";
-import Ecosystem from "@/components/landing/Ecosystem";
-import FinalCTA from "@/components/landing/FinalCTA";
-import FAQs from "@/components/landing/FAQs";
 import StatsBand from "@/components/landing/StatsBand";
+import Ecosystem from "@/components/landing/Ecosystem";
+import WhyNovoLabs from "@/components/landing/WhyNovoLabs";
+import Benefits from "@/components/landing/Benefits";
+import Platform from "@/components/opera/Platform";
+import HowWeWork from "@/components/opera/HowWeWork";
+import TwoTracks from "@/components/landing/TwoTracks";
+import CredibilityBand from "@/components/landing/CredibilityBand";
+import AtCompletion from "@/components/opera/AtCompletion";
+import FAQs from "@/components/landing/FAQs";
+import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
 
 const jsonLd = {
@@ -110,8 +114,12 @@ export default function Page() {
         <StatsBand />
         <Ecosystem />
         <WhyNovoLabs />
-        <CredibilityBand />
+        <Benefits />
+        <Platform />
+        <HowWeWork />
         <TwoTracks />
+        <CredibilityBand />
+        <AtCompletion />
         <FAQs />
         <FinalCTA />
       </main>
