@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { Search, Zap, BarChart2 } from "lucide-react";
 
 const BLOCKS = [
   {
@@ -31,50 +30,6 @@ export default function WhyNovoLabs() {
   return (
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
-        {/* Centred display-xl header, no eyebrow */}
-        <div className="mb-16 text-center">
-          <h2 className="mx-auto font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-balance text-novo-black md:text-[72px] md:leading-[1.05] md:tracking-[-0.04em]">
-            Otros te dicen qué hacer. Nosotros lo hacemos y te enseñamos a continuarlo.
-          </h2>
-        </div>
-
-        {/* 3-column reasons grid */}
-        <div className="mt-16 mb-24 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-12">
-          {[
-            {
-              Icon: Search,
-              title: "Diagnóstico antes que solución",
-              body: "Mapeamos tu operación, cuantificamos dónde se pierde tiempo y dinero, y recién ahí definimos el plan de acción. Sin asumir. Sin enlatados.",
-            },
-            {
-              Icon: Zap,
-              title: "Ejecutamos, no recomendamos",
-              body: "Construimos el equipo de agentes de IA autónomos que tu operación necesita. Tu equipo decide las prioridades. Nosotros ponemos las manos.",
-            },
-            {
-              Icon: BarChart2,
-              title: "Salimos con datos, no con PDFs",
-              body: "Al finalizar tendrás un sistema de agentes corriendo con métricas de ahorro reales. Verificable. Tuyo.",
-            },
-          ].map(({ Icon, title, body }, i) => (
-            <motion.div
-              key={title}
-              initial={reduce ? { opacity: 1 } : { opacity: 0, y: 16 }}
-              whileInView={reduce ? { opacity: 1 } : { opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: i * 0.1, ease: [0, 0, 0.2, 1] }}
-            >
-              <Icon size={28} className="text-novo-accent" strokeWidth={1.5} />
-              <h3 className="mt-6 mb-3 font-display text-[20px] leading-[1.2] tracking-[-0.01em] text-novo-black md:text-display-s md:tracking-[-0.02em]">
-                {title}
-              </h3>
-              <p className="text-body-m leading-[1.6] text-novo-graphite">{body}</p>
-            </motion.div>
-          ))}
-        </div>
-
-        <hr className="mb-24 border-novo-line" />
-
         {/* Subtitle above problems list */}
         <h3 className="mb-16 font-display text-[24px] leading-[1.2] tracking-[-0.01em] text-novo-black md:text-[48px] md:leading-[1.15] md:tracking-[-0.02em]">
           Probablemente vos también...
