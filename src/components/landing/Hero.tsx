@@ -23,7 +23,7 @@ export default function Hero() {
     <section className="bg-novo-cream px-8 pb-[80px] pt-[96px] md:pb-[128px] md:pt-[160px]">
       <div className="mx-auto max-w-[880px]">
         <motion.div {...motionProps(0, reduced)}>
-          <Eyebrow>Para empresas que facturan entre 5 y 50 millones</Eyebrow>
+          <Eyebrow>PROGRAMA INCOMPANY - A MEDIDA </Eyebrow>
         </motion.div>
 
         <h1 className="mb-10">
@@ -31,7 +31,7 @@ export default function Hero() {
             className="block font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-novo-black md:text-[72px] md:leading-[1.05] md:tracking-[-0.04em]"
             {...motionProps(120, reduced)}
           >
-            Crecé tu negocio sin contratar más gente.
+            Crecer ya no debería significar contratar.
           </motion.span>
         </h1>
 
@@ -39,15 +39,15 @@ export default function Hero() {
           className="mb-12 max-w-[56ch] text-body-xl text-novo-charcoal"
           {...motionProps(400, reduced)}
         >
-          Construimos los agentes de IA que tu operación necesita para escalar.{" "}
+          Construimos los agentes de IA que tu operación necesita para escalar. En 12 semanas, trabajamos con tu equipo{" "}
           <span className="font-medium text-novo-accent">
-            En 12 semanas, dentro de tu empresa, trabajando con tu equipo.
+            sobre un desafío real que mejore tu negocio.
           </span>
         </motion.p>
 
         <motion.div className="flex flex-wrap gap-8" {...motionProps(600, reduced)}>
           <ButtonPrimary href="#agendar">
-            Agendar un diagnóstico →
+            Contactar a los fundadores de Novolabs →
           </ButtonPrimary>
           <ButtonSecondary href="#tracks">Ver cómo trabajamos ↓</ButtonSecondary>
         </motion.div>

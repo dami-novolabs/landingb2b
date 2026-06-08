@@ -74,28 +74,8 @@ export default function CredibilityBand() {
   return (
     <section className="border-b border-t border-novo-line bg-novo-cream px-8 py-[64px] md:py-[96px]">
 
-      {/* Stats row */}
-      <div className="mx-auto mb-20 max-w-[880px] px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {[
-            { value: "8 años", label: "construyendo con empresas reales" },
-            { value: "+40", label: "empresas acompañadas" },
-            { value: "360+", label: "personas capacitadas" },
-          ].map((stat) => (
-            <div key={stat.value}>
-              <p className="font-display text-[48px] leading-none tracking-[-0.04em] text-novo-black">
-                {stat.value}
-              </p>
-              <p className="mt-2 font-mono text-[12px] uppercase tracking-[0.06em] text-novo-graphite">
-                {stat.label}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Advisors */}
-      <div className="mx-auto max-w-[880px] px-8">
+      <div className="mx-auto mt-20 max-w-[880px] px-8">
         <h3 className="mb-12 font-display text-[28px] leading-[1.15] text-novo-black md:text-[48px]">
           Socios que apoyan Novolabs
         </h3>
