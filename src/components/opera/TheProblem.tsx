@@ -34,7 +34,7 @@ export default function TheProblem() {
           <p className="mb-6 font-mono text-[13px] uppercase tracking-[0.08em] text-novo-graphite">
             — EL PROBLEMA
           </p>
-          <h2 className="mx-auto max-w-[16ch] font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+          <h2 className="mx-auto max-w-[16ch] font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-balance text-novo-black md:text-[72px] md:leading-[1.05] md:tracking-[-0.04em]">
             Crecer significa contratar. Y contratar no escala.
           </h2>
         </div>
@@ -52,7 +52,7 @@ export default function TheProblem() {
               <p className="mb-4 font-mono text-[13px] tracking-[0.04em] text-novo-mid">
                 {item.num}
               </p>
-              <h3 className="mb-4 font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black">
+              <h3 className="mb-4 font-display text-[22px] leading-[1.2] tracking-[-0.01em] text-novo-black md:text-[32px] md:leading-[1.15] md:tracking-[-0.02em]">
                 {item.title}
               </h3>
               <p className="text-[16px] leading-[1.6] text-novo-graphite">

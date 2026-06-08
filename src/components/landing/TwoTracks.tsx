@@ -33,7 +33,7 @@ export default function TwoTracks() {
     <section id="tracks" className="bg-novo-cream-50 py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
         <div className="text-center">
-          <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+          <h2 className="mx-auto font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-balance text-novo-black md:text-[72px] md:leading-[1.05] md:tracking-[-0.04em]">
             Trabajas directo con los fundadores, sin consultores.
           </h2>
           <p className="mx-auto mt-6 max-w-[56ch] text-[21px] leading-[1.55] tracking-[-0.005em] text-novo-graphite">
@@ -69,7 +69,7 @@ export default function TwoTracks() {
       </div>
 
       <div className="mx-auto mt-20 max-w-[1280px] px-8">
-        <h3 className="mb-12 text-center font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
+        <h3 className="mb-12 text-center font-display text-[24px] leading-[1.2] tracking-[-0.01em] text-novo-black md:text-[48px] md:leading-[1.15] md:tracking-[-0.02em]">
           Para empresas que quieren crecer sin contratar.
         </h3>
 
@@ -86,7 +86,7 @@ export default function TwoTracks() {
             >
               <Card as="article" className="group flex w-full flex-col">
                 <Eyebrow>{card.eyebrow}</Eyebrow>
-                <h3 className="mb-6 font-display text-[30px] tracking-[-0.02em] text-novo-black">
+                <h3 className="mb-6 font-display text-[22px] leading-[1.2] tracking-[-0.01em] text-novo-black md:text-[30px] md:tracking-[-0.02em]">
                   {card.title}
                 </h3>
                 <p className="mb-6 text-body-m text-novo-charcoal">{card.body1}</p>

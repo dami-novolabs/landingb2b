@@ -31,7 +31,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.h1
-            className="mb-8 mt-6 font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-novo-black md:text-[72px]"
+            className="mb-8 mt-6 font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-novo-black md:text-[72px] md:leading-[1.05] md:tracking-[-0.04em]"
             {...motionProps(120, reduced)}
           >
             Tu operación llegó al techo de lo que tu equipo actual puede hacer.
