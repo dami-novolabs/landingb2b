@@ -20,8 +20,22 @@ export default function TwoTracks() {
             Por eso solo aceptamos 2 clientes por trimestre.
           </p>
 
+          <ul className="mx-auto mt-8 mb-12 max-w-[520px] space-y-3 text-left">
+            {[
+              "Diagnóstico real antes de construir nada.",
+              "Agentes IA desplegados y operando en tu empresa.",
+              "Tu equipo capacitado para mantenerlos.",
+              "Solo 2 clientes por trimestre.",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3 text-body-m text-novo-charcoal">
+                <span className="mt-0.5 flex-shrink-0 text-novo-accent">→</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+
           {/* Founder portraits */}
-          <div className="mx-auto mt-12 flex max-w-[560px] justify-center gap-16">
+          <div className="mx-auto mt-4 flex max-w-[560px] justify-center gap-16">
             {[
               { name: "Tomás Volonté",  image: "/founders/tomas-volonte.png" },
               { name: "Damián Sánchez", image: "/founders/damian-sanchez.png" },
