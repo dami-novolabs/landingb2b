@@ -1,71 +1,36 @@
-const COLUMNS = [
-  {
-    eyebrow: "NOVO LABS",
-    links: [
-      { label: "El método", href: "/metodo" },
-      { label: "El equipo", href: "/equipo" },
-      { label: "Casos", href: "/casos" },
-    ],
-  },
-  {
-    eyebrow: "PROGRAMAS",
-    links: [
-      { label: "Innova", href: "/innova" },
-      { label: "Opera", href: "/programa" },
-    ],
-  },
-  {
-    eyebrow: "CONTACTO",
-    links: [
-      { label: "hola@novolabs.co", href: "mailto:hola@novolabs.co" },
-      { label: "LinkedIn", href: "#linkedin" },
-      { label: "Newsletter", href: "/newsletter" },
-    ],
-  },
+const LINKS = [
+  { label: "Programa Opera", href: "/programa" },
+  { label: "Escribinos por WhatsApp", href: "https://wa.me/5491163544698" },
+  { label: "Escribinos por LinkedIn", href: "https://www.linkedin.com/in/tomas-volonte/" },
+  { label: "Podcast Novolabs", href: "https://www.youtube.com/@novolabs-startup-school" },
+  { label: "aloha@novolabs.xyz", href: "mailto:aloha@novolabs.xyz" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-novo-near-black px-8 pb-12 pt-24">
+    <footer className="bg-novo-near-black px-8 pb-12 pt-16">
       <div className="mx-auto max-w-[1280px]">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-          {COLUMNS.map((col) => (
-            <div key={col.eyebrow}>
-              <p className="mb-6 font-mono text-mono-xs uppercase tracking-[0.08em] text-novo-mid">
-                {col.eyebrow}
-              </p>
-              <ul className="flex flex-col gap-3">
-                {col.links.map((link) => (
-                  <li key={link.href}>
-                    <a
-                      href={link.href}
-                      className="text-[15px] text-novo-cream transition-colors duration-200 hover:text-novo-accent"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <ul className="flex flex-col gap-3 md:flex-row md:flex-wrap md:gap-8">
+          {LINKS.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="text-[15px] text-novo-cream transition-colors duration-200 hover:text-novo-accent"
+              >
+                {link.label}
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
 
         <hr
-          className="mb-6 mt-16"
+          className="mb-6 mt-12"
           style={{ borderColor: "rgba(229,225,217,0.1)" }}
         />
 
-        <div className="flex flex-col gap-2 text-[13px] text-novo-mid md:flex-row md:justify-between">
-          <span>© 2026 Novo Labs · Buenos Aires · Madrid</span>
-          <span className="flex gap-6">
-            <a href="/privacidad" className="transition-colors duration-200 hover:text-novo-cream">
-              Privacidad
-            </a>
-            <a href="/terminos" className="transition-colors duration-200 hover:text-novo-cream">
-              Términos
-            </a>
-          </span>
-        </div>
+        <span className="text-[13px] text-novo-mid">© 2026 Novo Labs · Buenos Aires · Madrid</span>
       </div>
     </footer>
   );
