@@ -47,7 +47,7 @@ export default function HowWeWork() {
       <div className="mx-auto max-w-[880px] px-8">
 
         {/* Header — centrado, display-xl */}
-        <h2 className="mb-16 text-center font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+        <h2 className="mb-16 text-center font-display text-[30px] leading-[1.1] tracking-[-0.02em] text-balance text-novo-black md:text-[72px] md:leading-[1.05] md:tracking-[-0.04em]">
           12 semanas. 3 fases para transformar tu negocio.
         </h2>
 
@@ -57,7 +57,7 @@ export default function HowWeWork() {
               {i > 0 && <hr className="my-20 border-novo-line" />}
               <div>
                 <Eyebrow>{phase.eyebrow}</Eyebrow>
-                <h3 className="mb-6 font-display text-display-s text-novo-black">
+                <h3 className="mb-6 font-display text-[22px] leading-[1.2] text-novo-black md:text-display-s">
                   {phase.title}
                 </h3>
                 <p className="mb-8 text-body-l text-novo-charcoal">{phase.intro}</p>

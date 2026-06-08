@@ -11,7 +11,7 @@ export default function FinalCTA() {
             {/* Left — copy */}
             <div className="p-8 md:p-16">
               <Eyebrow>EL PRIMER PASO</Eyebrow>
-              <h2 className="font-display text-[36px] leading-[1.08] tracking-[-0.03em] text-novo-black md:text-[56px]">
+              <h2 className="font-display text-[26px] leading-[1.1] tracking-[-0.02em] text-novo-black md:text-[56px] md:leading-[1.08] md:tracking-[-0.03em]">
                 Descubrir qué oportunidades tu negocio puede capitalizar.
               </h2>
               <p className="mb-10 mt-6 text-body-l text-novo-charcoal">

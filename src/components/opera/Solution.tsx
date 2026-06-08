@@ -27,7 +27,7 @@ export default function Solution() {
   return (
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
       <div className="mx-auto max-w-[880px] px-8">
-        <h2 className="mb-16 font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
+        <h2 className="mb-16 font-display text-[24px] leading-[1.2] tracking-[-0.01em] text-novo-black md:text-[48px] md:leading-[1.15] md:tracking-[-0.02em]">
           La IA no va a reemplazar tu empresa, pero va a optimizar la estructura de costos de quienes la usen.
         </h2>
 

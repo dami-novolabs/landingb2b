@@ -6,7 +6,7 @@ export default function FinalCTA() {
       <div className="mx-auto max-w-[880px] px-8">
 
         {/* Header — centrado, display-xl */}
-        <h2 className="mb-16 text-center font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+        <h2 className="mb-16 text-center font-display text-[30px] leading-[1.1] tracking-[-0.02em] text-balance text-novo-black md:text-[72px] md:leading-[1.05] md:tracking-[-0.04em]">
           Si lo que leíste te hace sentido, conocernos es el siguiente paso.
         </h2>
 

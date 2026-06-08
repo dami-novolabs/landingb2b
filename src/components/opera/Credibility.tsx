@@ -105,7 +105,7 @@ export default function Credibility() {
     <section className="bg-novo-cream py-[80px] md:py-[128px]">
       {/* Header */}
       <div className="mx-auto mb-20 max-w-[880px] px-8">
-        <h2 className="font-display text-[56px] leading-none tracking-[-0.03em] text-balance text-novo-black">
+        <h2 className="font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-balance text-novo-black md:text-[56px] md:leading-none md:tracking-[-0.03em]">
           Confían en nosotros
         </h2>
       </div>

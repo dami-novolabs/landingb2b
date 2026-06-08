@@ -33,7 +33,7 @@ export default function WhyNovoLabs() {
       <div className="mx-auto max-w-[880px] px-8">
         {/* Centred display-xl header, no eyebrow */}
         <div className="mb-16 text-center">
-          <h2 className="mx-auto font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-novo-black md:text-[72px]">
+          <h2 className="mx-auto font-display text-[32px] leading-[1.1] tracking-[-0.02em] text-balance text-novo-black md:text-[72px] md:leading-[1.05] md:tracking-[-0.04em]">
             Otros te dicen qué hacer. Nosotros lo hacemos y te enseñamos a continuarlo.
           </h2>
         </div>
@@ -65,7 +65,7 @@ export default function WhyNovoLabs() {
               transition={{ duration: 0.5, delay: i * 0.1, ease: [0, 0, 0.2, 1] }}
             >
               <Icon size={28} className="text-novo-accent" strokeWidth={1.5} />
-              <h3 className="mt-6 mb-3 font-display text-display-s tracking-[-0.02em] text-novo-black">
+              <h3 className="mt-6 mb-3 font-display text-[20px] leading-[1.2] tracking-[-0.01em] text-novo-black md:text-display-s md:tracking-[-0.02em]">
                 {title}
               </h3>
               <p className="text-body-m leading-[1.6] text-novo-graphite">{body}</p>
@@ -76,7 +76,7 @@ export default function WhyNovoLabs() {
         <hr className="mb-24 border-novo-line" />
 
         {/* Subtitle above problems list */}
-        <h3 className="mb-16 font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-novo-black md:text-[48px]">
+        <h3 className="mb-16 font-display text-[24px] leading-[1.2] tracking-[-0.01em] text-novo-black md:text-[48px] md:leading-[1.15] md:tracking-[-0.02em]">
           Probablemente vos también...
         </h3>
 

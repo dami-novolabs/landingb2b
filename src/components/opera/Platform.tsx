@@ -46,7 +46,7 @@ export default function Platform() {
           <p className="mb-6 font-mono text-[13px] uppercase tracking-[0.08em] text-[#a9a6a2]">
             TU SISTEMA OPERATIVO
           </p>
-          <h2 className="mx-auto max-w-[20ch] font-display text-[48px] leading-[1.05] tracking-[-0.04em] text-balance text-[#FAFAFA] md:text-[72px]">
+          <h2 className="mx-auto max-w-[20ch] font-display text-[30px] leading-[1.1] tracking-[-0.02em] text-balance text-[#FAFAFA] md:text-[72px] md:leading-[1.05] md:tracking-[-0.04em]">
             Los agentes trabajan 24h. Tu equipo aprueba cuando importa.
           </h2>
         </div>
@@ -69,7 +69,7 @@ export default function Platform() {
                   <feature.icon size={20} className="text-[#FAFAFA]" strokeWidth={1.5} />
                 </div>
                 <div>
-                  <h3 className="mb-2 font-display text-[32px] leading-[1.15] tracking-[-0.02em] text-[#FAFAFA]">
+                  <h3 className="mb-2 font-display text-[22px] leading-[1.2] tracking-[-0.01em] text-[#FAFAFA] md:text-[32px] md:leading-[1.15] md:tracking-[-0.02em]">
                     {feature.title}
                   </h3>
                   <p className="text-[16px] leading-[1.6] text-[#a9a6a2]">
